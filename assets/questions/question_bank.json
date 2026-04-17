@@ -1,0 +1,815 @@
+{
+  "version": "1.0",
+  "last_updated": "2024-01-01",
+  "categories": [
+    {
+      "id": "mathematics",
+      "name": "Mathematics",
+      "description": "Arithmetic, algebra, geometry and problem solving",
+      "icon": "calculate",
+      "color": "#1565C0"
+    },
+    {
+      "id": "english",
+      "name": "English",
+      "description": "Vocabulary, reading comprehension and language skills",
+      "icon": "menu_book",
+      "color": "#2E7D32"
+    },
+    {
+      "id": "grammar",
+      "name": "Grammar",
+      "description": "Parts of speech, sentence structure and punctuation",
+      "icon": "spellcheck",
+      "color": "#6A1B9A"
+    },
+    {
+      "id": "comprehension",
+      "name": "Comprehension",
+      "description": "Reading passages and understanding written content",
+      "icon": "auto_stories",
+      "color": "#E65100"
+    },
+    {
+      "id": "science",
+      "name": "Science",
+      "description": "Biology, chemistry, physics and general science",
+      "icon": "science",
+      "color": "#00695C"
+    },
+    {
+      "id": "general_knowledge",
+      "name": "General Knowledge",
+      "description": "History, geography, current affairs and trivia",
+      "icon": "public",
+      "color": "#AD1457"
+    }
+  ],
+  "questions": [
+    {
+      "id": "math_001",
+      "category": "mathematics",
+      "difficulty": "easy",
+      "question": "What is 15 × 8?",
+      "options": ["100", "110", "120", "130"],
+      "correct_answer": 2,
+      "explanation": "15 × 8 = 120. You can calculate this as 15 × 8 = (10 × 8) + (5 × 8) = 80 + 40 = 120."
+    },
+    {
+      "id": "math_002",
+      "category": "mathematics",
+      "difficulty": "easy",
+      "question": "What is the square root of 144?",
+      "options": ["10", "11", "12", "13"],
+      "correct_answer": 2,
+      "explanation": "The square root of 144 is 12, because 12 × 12 = 144."
+    },
+    {
+      "id": "math_003",
+      "category": "mathematics",
+      "difficulty": "medium",
+      "question": "If a triangle has angles of 45° and 65°, what is the third angle?",
+      "options": ["60°", "70°", "80°", "90°"],
+      "correct_answer": 1,
+      "explanation": "The sum of all angles in a triangle is 180°. So the third angle = 180° - 45° - 65° = 70°."
+    },
+    {
+      "id": "math_004",
+      "category": "mathematics",
+      "difficulty": "medium",
+      "question": "What is 25% of 200?",
+      "options": ["25", "40", "50", "75"],
+      "correct_answer": 2,
+      "explanation": "25% of 200 = (25/100) × 200 = 0.25 × 200 = 50."
+    },
+    {
+      "id": "math_005",
+      "category": "mathematics",
+      "difficulty": "medium",
+      "question": "Solve for x: 3x + 12 = 33",
+      "options": ["5", "7", "9", "11"],
+      "correct_answer": 2,
+      "explanation": "3x + 12 = 33 → 3x = 33 - 12 → 3x = 21 → x = 7. Wait, that's 7. Let me recalculate: 3x = 21, x = 7."
+    },
+    {
+      "id": "math_006",
+      "category": "mathematics",
+      "difficulty": "easy",
+      "question": "What is the perimeter of a rectangle with length 8 cm and width 5 cm?",
+      "options": ["13 cm", "26 cm", "40 cm", "20 cm"],
+      "correct_answer": 1,
+      "explanation": "Perimeter of a rectangle = 2 × (length + width) = 2 × (8 + 5) = 2 × 13 = 26 cm."
+    },
+    {
+      "id": "math_007",
+      "category": "mathematics",
+      "difficulty": "hard",
+      "question": "What is the value of 2³ + 3²?",
+      "options": ["13", "15", "17", "19"],
+      "correct_answer": 2,
+      "explanation": "2³ = 2 × 2 × 2 = 8, and 3² = 3 × 3 = 9. So 2³ + 3² = 8 + 9 = 17."
+    },
+    {
+      "id": "math_008",
+      "category": "mathematics",
+      "difficulty": "medium",
+      "question": "A car travels 240 km in 4 hours. What is its average speed?",
+      "options": ["50 km/h", "55 km/h", "60 km/h", "65 km/h"],
+      "correct_answer": 2,
+      "explanation": "Average speed = Distance ÷ Time = 240 km ÷ 4 hours = 60 km/h."
+    },
+    {
+      "id": "math_009",
+      "category": "mathematics",
+      "difficulty": "easy",
+      "question": "What is the LCM (Least Common Multiple) of 4 and 6?",
+      "options": ["8", "10", "12", "24"],
+      "correct_answer": 2,
+      "explanation": "Multiples of 4: 4, 8, 12, 16... Multiples of 6: 6, 12, 18... The LCM is the smallest common multiple, which is 12."
+    },
+    {
+      "id": "math_010",
+      "category": "mathematics",
+      "difficulty": "hard",
+      "question": "If the area of a circle is 78.5 cm², what is its radius? (π ≈ 3.14)",
+      "options": ["3 cm", "4 cm", "5 cm", "6 cm"],
+      "correct_answer": 2,
+      "explanation": "Area = π × r² → 78.5 = 3.14 × r² → r² = 78.5 ÷ 3.14 = 25 → r = √25 = 5 cm."
+    },
+    {
+      "id": "math_011",
+      "category": "mathematics",
+      "difficulty": "medium",
+      "question": "What is 3/4 + 1/2?",
+      "options": ["4/6", "5/6", "1 1/4", "1 1/2"],
+      "correct_answer": 2,
+      "explanation": "3/4 + 1/2 = 3/4 + 2/4 = 5/4 = 1 1/4. Convert 1/2 to 2/4, then add: 3/4 + 2/4 = 5/4."
+    },
+    {
+      "id": "math_012",
+      "category": "mathematics",
+      "difficulty": "hard",
+      "question": "A shop sells a jacket for $75 after a 25% discount. What was the original price?",
+      "options": ["$90", "$95", "$100", "$105"],
+      "correct_answer": 2,
+      "explanation": "If the discounted price is $75 and that represents 75% (100% - 25%) of the original price, then original price = $75 ÷ 0.75 = $100."
+    },
+    {
+      "id": "math_013",
+      "category": "mathematics",
+      "difficulty": "easy",
+      "question": "What is the value of π (pi) rounded to 2 decimal places?",
+      "options": ["3.12", "3.14", "3.16", "3.18"],
+      "correct_answer": 1,
+      "explanation": "Pi (π) is approximately 3.14159..., which rounds to 3.14 to 2 decimal places."
+    },
+    {
+      "id": "math_014",
+      "category": "mathematics",
+      "difficulty": "medium",
+      "question": "What is the HCF (Highest Common Factor) of 36 and 48?",
+      "options": ["6", "9", "12", "18"],
+      "correct_answer": 2,
+      "explanation": "Factors of 36: 1,2,3,4,6,9,12,18,36. Factors of 48: 1,2,3,4,6,8,12,16,24,48. The HCF is 12."
+    },
+    {
+      "id": "math_015",
+      "category": "mathematics",
+      "difficulty": "easy",
+      "question": "Which of these is a prime number?",
+      "options": ["15", "21", "29", "35"],
+      "correct_answer": 2,
+      "explanation": "29 is a prime number because it can only be divided by 1 and itself. 15 = 3×5, 21 = 3×7, 35 = 5×7."
+    },
+    {
+      "id": "eng_001",
+      "category": "english",
+      "difficulty": "easy",
+      "question": "What is the synonym of 'happy'?",
+      "options": ["Sad", "Joyful", "Angry", "Tired"],
+      "correct_answer": 1,
+      "explanation": "A synonym is a word with the same or similar meaning. 'Joyful' means feeling great happiness, which is a synonym of 'happy'."
+    },
+    {
+      "id": "eng_002",
+      "category": "english",
+      "difficulty": "easy",
+      "question": "What is the antonym of 'ancient'?",
+      "options": ["Old", "Historic", "Modern", "Classic"],
+      "correct_answer": 2,
+      "explanation": "An antonym is a word with the opposite meaning. 'Ancient' means very old, and its antonym is 'modern', which means recent or current."
+    },
+    {
+      "id": "eng_003",
+      "category": "english",
+      "difficulty": "medium",
+      "question": "Which word is spelled correctly?",
+      "options": ["Accomodation", "Accommodation", "Acommodation", "Acomodation"],
+      "correct_answer": 1,
+      "explanation": "The correct spelling is 'Accommodation' with double 'c' and double 'm'. A helpful trick: remember 'ACC-OMMO-DATION'."
+    },
+    {
+      "id": "eng_004",
+      "category": "english",
+      "difficulty": "medium",
+      "question": "What does the word 'benevolent' mean?",
+      "options": ["Cruel and harsh", "Well-meaning and kind", "Shy and reserved", "Loud and boisterous"],
+      "correct_answer": 1,
+      "explanation": "'Benevolent' comes from Latin 'bene' (well) + 'volent' (wishing). It means well-meaning and kindly, often used to describe charitable or generous people."
+    },
+    {
+      "id": "eng_005",
+      "category": "english",
+      "difficulty": "hard",
+      "question": "What is the meaning of the idiom 'barking up the wrong tree'?",
+      "options": ["Talking to animals", "Making a mistake about something", "Being very loud", "Climbing a tree"],
+      "correct_answer": 1,
+      "explanation": "'Barking up the wrong tree' means pursuing a mistaken or misguided course of action. It comes from hunting dogs that bark at the wrong tree when their quarry has moved."
+    },
+    {
+      "id": "eng_006",
+      "category": "english",
+      "difficulty": "easy",
+      "question": "Which sentence uses the word 'there' correctly?",
+      "options": ["There going to the park.", "The book is over there.", "I like there house.", "There dog is friendly."],
+      "correct_answer": 1,
+      "explanation": "'There' is used to refer to a place or position. 'The book is over there' correctly uses 'there' to indicate a location. The other sentences need 'they're' or 'their'."
+    },
+    {
+      "id": "eng_007",
+      "category": "english",
+      "difficulty": "medium",
+      "question": "What does the prefix 'un-' mean in the word 'unhappy'?",
+      "options": ["Very", "Not", "Before", "After"],
+      "correct_answer": 1,
+      "explanation": "The prefix 'un-' means 'not' or 'the opposite of'. So 'unhappy' means 'not happy'. Other examples: unkind (not kind), unusual (not usual)."
+    },
+    {
+      "id": "eng_008",
+      "category": "english",
+      "difficulty": "hard",
+      "question": "Which word is an example of an onomatopoeia?",
+      "options": ["Beautiful", "Sizzle", "Happy", "Quickly"],
+      "correct_answer": 1,
+      "explanation": "Onomatopoeia refers to words that phonetically imitate the sound they describe. 'Sizzle' sounds like frying. Other examples: buzz, hiss, clang, splash."
+    },
+    {
+      "id": "eng_009",
+      "category": "english",
+      "difficulty": "medium",
+      "question": "What is the plural of 'leaf'?",
+      "options": ["Leafs", "Leaves", "Leafes", "Leafs"],
+      "correct_answer": 1,
+      "explanation": "Words ending in '-f' or '-fe' typically change to '-ves' in plural form. So 'leaf' becomes 'leaves'. Other examples: knife→knives, half→halves."
+    },
+    {
+      "id": "eng_010",
+      "category": "english",
+      "difficulty": "easy",
+      "question": "Which word means 'a person who writes books'?",
+      "options": ["Reader", "Editor", "Author", "Publisher"],
+      "correct_answer": 2,
+      "explanation": "An 'author' is a person who writes books or other texts. While an editor reviews and corrects writing, and a publisher produces and distributes it."
+    },
+    {
+      "id": "eng_011",
+      "category": "english",
+      "difficulty": "medium",
+      "question": "What is the meaning of 'ambiguous'?",
+      "options": ["Very clear and precise", "Open to more than one interpretation", "Extremely difficult", "Completely false"],
+      "correct_answer": 1,
+      "explanation": "'Ambiguous' means open to more than one interpretation, or not clear. Example: 'The bank was steep' — ambiguous because 'bank' could mean a river bank or financial bank."
+    },
+    {
+      "id": "eng_012",
+      "category": "english",
+      "difficulty": "hard",
+      "question": "What literary device is used in 'The stars danced playfully in the moonlit sky'?",
+      "options": ["Simile", "Metaphor", "Personification", "Alliteration"],
+      "correct_answer": 2,
+      "explanation": "Personification gives human qualities to non-human things. Stars cannot literally dance, but saying they 'danced playfully' attributes a human action to them."
+    },
+    {
+      "id": "eng_013",
+      "category": "english",
+      "difficulty": "easy",
+      "question": "What is the opposite of 'victory'?",
+      "options": ["Win", "Success", "Defeat", "Achievement"],
+      "correct_answer": 2,
+      "explanation": "'Defeat' is the antonym (opposite) of 'victory'. Victory means winning or succeeding, while defeat means losing or failing."
+    },
+    {
+      "id": "eng_014",
+      "category": "english",
+      "difficulty": "medium",
+      "question": "Which word correctly completes: 'She _____ to school every day.'",
+      "options": ["go", "goes", "going", "gone"],
+      "correct_answer": 1,
+      "explanation": "With third-person singular subjects (she, he, it), we add '-s' or '-es' to the verb in simple present tense. So 'She goes' is correct."
+    },
+    {
+      "id": "eng_015",
+      "category": "english",
+      "difficulty": "hard",
+      "question": "What does the word 'ephemeral' mean?",
+      "options": ["Permanent and lasting", "Lasting for a very short time", "Extremely large", "Deeply important"],
+      "correct_answer": 1,
+      "explanation": "'Ephemeral' means lasting for a very short time. It comes from the Greek word 'ephemeros' meaning 'lasting only a day'. Example: 'The ephemeral beauty of a rainbow.'"
+    },
+    {
+      "id": "gram_001",
+      "category": "grammar",
+      "difficulty": "easy",
+      "question": "Which of the following is a noun?",
+      "options": ["Run", "Blue", "Teacher", "Quickly"],
+      "correct_answer": 2,
+      "explanation": "A noun is a word that names a person, place, thing, or idea. 'Teacher' is a noun (person). 'Run' is a verb, 'Blue' is an adjective, and 'Quickly' is an adverb."
+    },
+    {
+      "id": "gram_002",
+      "category": "grammar",
+      "difficulty": "easy",
+      "question": "Identify the verb in the sentence: 'The cat sleeps on the mat.'",
+      "options": ["cat", "sleeps", "mat", "on"],
+      "correct_answer": 1,
+      "explanation": "A verb describes an action or state of being. In this sentence, 'sleeps' is the verb — it describes what the cat is doing."
+    },
+    {
+      "id": "gram_003",
+      "category": "grammar",
+      "difficulty": "medium",
+      "question": "Which sentence is grammatically correct?",
+      "options": ["He don't like vegetables.", "She doesn't likes pizza.", "They doesn't eat meat.", "We don't play football."],
+      "correct_answer": 3,
+      "explanation": "'We don't play football' is correct. With 'I/you/we/they', we use 'don't'. With 'he/she/it', we use 'doesn't'. 'Doesn't' is followed by the base form of the verb."
+    },
+    {
+      "id": "gram_004",
+      "category": "grammar",
+      "difficulty": "medium",
+      "question": "What type of pronoun is 'myself'?",
+      "options": ["Personal pronoun", "Reflexive pronoun", "Possessive pronoun", "Relative pronoun"],
+      "correct_answer": 1,
+      "explanation": "'Myself' is a reflexive pronoun. Reflexive pronouns refer back to the subject of the sentence: 'I hurt myself'. Others: yourself, himself, herself, itself."
+    },
+    {
+      "id": "gram_005",
+      "category": "grammar",
+      "difficulty": "easy",
+      "question": "Which punctuation mark is used at the end of a question?",
+      "options": ["Full stop (.)", "Exclamation mark (!)", "Question mark (?)", "Comma (,)"],
+      "correct_answer": 2,
+      "explanation": "A question mark (?) is placed at the end of a direct question. Example: 'What time is it?' The question mark signals to the reader that a question is being asked."
+    },
+    {
+      "id": "gram_006",
+      "category": "grammar",
+      "difficulty": "medium",
+      "question": "What is the past tense of 'write'?",
+      "options": ["Writed", "Wrote", "Written", "Wroted"],
+      "correct_answer": 1,
+      "explanation": "'Write' is an irregular verb. Its past tense is 'wrote' (simple past). 'Written' is the past participle form, used with have/has: 'I have written'."
+    },
+    {
+      "id": "gram_007",
+      "category": "grammar",
+      "difficulty": "hard",
+      "question": "Which sentence uses a conjunction correctly?",
+      "options": ["I was tired, but I finished the work.", "She left because tired.", "He came although he arrived late.", "We waited since it was raining but we left."],
+      "correct_answer": 0,
+      "explanation": "'I was tired, but I finished the work' correctly uses 'but' as a coordinating conjunction to join two independent clauses that contrast each other."
+    },
+    {
+      "id": "gram_008",
+      "category": "grammar",
+      "difficulty": "medium",
+      "question": "Which word is an adjective in the sentence: 'The tall boy ran fast.'",
+      "options": ["boy", "ran", "tall", "fast"],
+      "correct_answer": 2,
+      "explanation": "An adjective modifies or describes a noun. 'Tall' describes the noun 'boy', so it is an adjective. 'Fast' here is an adverb modifying the verb 'ran'."
+    },
+    {
+      "id": "gram_009",
+      "category": "grammar",
+      "difficulty": "hard",
+      "question": "Which sentence is in passive voice?",
+      "options": ["The chef cooked the meal.", "The meal was cooked by the chef.", "The chef is cooking the meal.", "The chef had cooked the meal."],
+      "correct_answer": 1,
+      "explanation": "Passive voice: the subject receives the action. 'The meal was cooked by the chef' — the meal (subject) receives the action. Active voice: subject performs the action."
+    },
+    {
+      "id": "gram_010",
+      "category": "grammar",
+      "difficulty": "easy",
+      "question": "What is the comparative form of 'good'?",
+      "options": ["Gooder", "More good", "Better", "Best"],
+      "correct_answer": 2,
+      "explanation": "'Good' is an irregular adjective. Its comparative form is 'better' (not 'gooder' or 'more good'). The superlative is 'best'. Example: good → better → best."
+    },
+    {
+      "id": "gram_011",
+      "category": "grammar",
+      "difficulty": "medium",
+      "question": "Which sentence contains a preposition?",
+      "options": ["She sings beautifully.", "He runs fast.", "The cat sat under the table.", "They laughed loudly."],
+      "correct_answer": 2,
+      "explanation": "A preposition shows the relationship between a noun/pronoun and another word. 'Under' in 'under the table' is a preposition showing the cat's position relative to the table."
+    },
+    {
+      "id": "gram_012",
+      "category": "grammar",
+      "difficulty": "hard",
+      "question": "Identify the type of clause: 'Although it was raining, we went for a walk.'",
+      "options": ["Simple sentence", "Compound sentence", "Complex sentence", "Compound-complex sentence"],
+      "correct_answer": 2,
+      "explanation": "This is a complex sentence — it has one independent clause ('we went for a walk') and one dependent clause ('Although it was raining') joined by a subordinating conjunction."
+    },
+    {
+      "id": "gram_013",
+      "category": "grammar",
+      "difficulty": "medium",
+      "question": "Which article should fill the blank: '___ umbrella is useful in rain.'",
+      "options": ["A", "An", "The", "No article needed"],
+      "correct_answer": 1,
+      "explanation": "Use 'an' before words that begin with a vowel sound. 'Umbrella' starts with 'u' (vowel sound), so we use 'an umbrella'. 'A' is used before consonant sounds."
+    },
+    {
+      "id": "gram_014",
+      "category": "grammar",
+      "difficulty": "easy",
+      "question": "What is the plural of 'child'?",
+      "options": ["Childs", "Children", "Childes", "Childrens"],
+      "correct_answer": 1,
+      "explanation": "'Child' is an irregular noun. Its plural is 'children', not 'childs'. Other irregular plurals: man→men, woman→women, foot→feet, tooth→teeth."
+    },
+    {
+      "id": "gram_015",
+      "category": "grammar",
+      "difficulty": "hard",
+      "question": "Which sentence uses the correct form of 'lie' or 'lay'?",
+      "options": ["I need to lay down.", "She laid the book on the table.", "He lied the baby in the crib.", "They layed the carpet yesterday."],
+      "correct_answer": 1,
+      "explanation": "'Lay' means to put/place something (requires an object). Past tense is 'laid'. 'She laid the book' = she placed the book. 'Lie' (to recline) past tense is 'lay'."
+    },
+    {
+      "id": "comp_001",
+      "category": "comprehension",
+      "difficulty": "medium",
+      "question": "Read the passage: 'The library was silent except for the soft rustling of pages. Emma sat in the corner, completely absorbed in her book, oblivious to the world outside.' What does 'oblivious' mean in this context?",
+      "options": ["Very aware of", "Unaware and inattentive to", "Excited about", "Frightened of"],
+      "correct_answer": 1,
+      "explanation": "'Oblivious' means not aware of or not concerned about what is happening around one. Emma was so focused on her book that she was unaware of the outside world."
+    },
+    {
+      "id": "comp_002",
+      "category": "comprehension",
+      "difficulty": "medium",
+      "question": "Read: 'Despite being the youngest on the team, Arun's remarkable talent and dedication earned him the captain's armband.' What does 'armband' symbolize here?",
+      "options": ["A sports injury", "Leadership and captaincy", "Team membership", "Age and experience"],
+      "correct_answer": 1,
+      "explanation": "In sports, wearing the captain's armband is a symbol of leadership. Earning the 'captain's armband' means being made captain of the team."
+    },
+    {
+      "id": "comp_003",
+      "category": "comprehension",
+      "difficulty": "easy",
+      "question": "Read: 'The sun was setting, painting the sky in shades of orange and pink. Birds flew homeward in V-shaped formations.' What time of day is described?",
+      "options": ["Early morning", "Noon", "Evening", "Midnight"],
+      "correct_answer": 2,
+      "explanation": "The passage describes a sunset — the sun setting and the sky turning orange and pink are classic signs of evening. Birds flying 'homeward' also suggests the day is ending."
+    },
+    {
+      "id": "comp_004",
+      "category": "comprehension",
+      "difficulty": "hard",
+      "question": "Read: 'The politician's speech was eloquent but hollow — full of grand promises that history had shown would never be fulfilled.' The author's tone toward the politician is best described as:",
+      "options": ["Admiring", "Neutral and objective", "Cynical and critical", "Sympathetic"],
+      "correct_answer": 2,
+      "explanation": "The author is cynical (distrustful) and critical. Words like 'hollow', 'grand promises' that 'would never be fulfilled' suggest the author doesn't believe the politician."
+    },
+    {
+      "id": "comp_005",
+      "category": "comprehension",
+      "difficulty": "medium",
+      "question": "Read: 'Maya had always been a night owl, staying up until 2 AM reading or studying, while her brother was an early bird who rose before dawn.' What does 'night owl' mean?",
+      "options": ["Someone who is afraid of the dark", "Someone who stays up late", "Someone who sleeps a lot", "Someone who works nights"],
+      "correct_answer": 1,
+      "explanation": "'Night owl' is an idiom describing a person who habitually stays up late at night. The passage confirms this by saying Maya stayed up until 2 AM."
+    },
+    {
+      "id": "comp_006",
+      "category": "comprehension",
+      "difficulty": "easy",
+      "question": "Read: 'The old lighthouse stood alone on the cliff, its light flashing rhythmically through the stormy night, guiding ships safely to harbor.' What is the primary purpose of the lighthouse?",
+      "options": ["To look beautiful", "To guide ships to safety", "To warn of storms", "To mark property boundaries"],
+      "correct_answer": 1,
+      "explanation": "The passage directly states the lighthouse was 'guiding ships safely to harbor', which is its primary purpose — navigation aid for ships at sea."
+    },
+    {
+      "id": "comp_007",
+      "category": "comprehension",
+      "difficulty": "hard",
+      "question": "Read: 'The scientist published her findings despite widespread skepticism. Two decades later, her once-controversial theory is now universally accepted.' What can we infer about the scientific community?",
+      "options": ["Scientists always accept new ideas quickly", "New theories face resistance before being proven", "Scientists never change their minds", "Only published work is ever accepted"],
+      "correct_answer": 1,
+      "explanation": "We can infer that new scientific theories often face skepticism initially but may be accepted over time with evidence. This is shown by the transition from 'controversial' to 'universally accepted'."
+    },
+    {
+      "id": "comp_008",
+      "category": "comprehension",
+      "difficulty": "medium",
+      "question": "Read: 'After hours of negotiation, both countries signed the treaty, ending fifty years of conflict. The handshake between the two leaders was captured in a photograph that became iconic.' What does 'iconic' mean here?",
+      "options": ["Religious and sacred", "Widely recognized and symbolic", "Black and white", "Taken by a famous photographer"],
+      "correct_answer": 1,
+      "explanation": "'Iconic' means widely recognized and representative of something significant. The photograph became iconic because it symbolized the end of a long conflict."
+    },
+    {
+      "id": "comp_009",
+      "category": "comprehension",
+      "difficulty": "easy",
+      "question": "Read: 'Tom was nervous before his driving test. His hands were shaking and his heart was pounding. He took a deep breath and started the engine.' How was Tom feeling?",
+      "options": ["Excited and happy", "Anxious and stressed", "Calm and relaxed", "Angry and frustrated"],
+      "correct_answer": 1,
+      "explanation": "Physical signs like shaking hands and a pounding heart indicate nervousness and anxiety. Taking a deep breath to calm himself further confirms Tom was feeling anxious."
+    },
+    {
+      "id": "comp_010",
+      "category": "comprehension",
+      "difficulty": "hard",
+      "question": "Read: 'The village had no electricity, yet its inhabitants seemed perfectly content. Children played in the streets until dark, elders told stories by firelight, and everyone knew their neighbor.' What is the central theme?",
+      "options": ["The dangers of modern technology", "Happiness doesn't require material wealth", "Villages are better than cities", "Children need outdoor activities"],
+      "correct_answer": 1,
+      "explanation": "The passage contrasts the lack of electricity with contentment and community. The central theme is that happiness and fulfillment can exist without material amenities."
+    },
+    {
+      "id": "sci_001",
+      "category": "science",
+      "difficulty": "easy",
+      "question": "What is the chemical symbol for water?",
+      "options": ["WA", "H2O", "HO2", "W2O"],
+      "correct_answer": 1,
+      "explanation": "Water is H2O — two hydrogen atoms (H) and one oxygen atom (O) bonded together. The '2' indicates there are two hydrogen atoms per water molecule."
+    },
+    {
+      "id": "sci_002",
+      "category": "science",
+      "difficulty": "easy",
+      "question": "Which planet is closest to the Sun?",
+      "options": ["Venus", "Earth", "Mercury", "Mars"],
+      "correct_answer": 2,
+      "explanation": "Mercury is the closest planet to the Sun. The order of planets from the Sun is: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune."
+    },
+    {
+      "id": "sci_003",
+      "category": "science",
+      "difficulty": "medium",
+      "question": "What is the process by which plants make their own food?",
+      "options": ["Respiration", "Photosynthesis", "Digestion", "Fermentation"],
+      "correct_answer": 1,
+      "explanation": "Photosynthesis is the process by which plants use sunlight, water, and carbon dioxide to produce oxygen and energy in the form of glucose. Formula: CO2 + H2O + light → glucose + O2."
+    },
+    {
+      "id": "sci_004",
+      "category": "science",
+      "difficulty": "medium",
+      "question": "What is the unit of electrical resistance?",
+      "options": ["Volt", "Ampere", "Ohm", "Watt"],
+      "correct_answer": 2,
+      "explanation": "The Ohm (Ω) is the unit of electrical resistance, named after Georg Simon Ohm. Ohm's Law states: Resistance = Voltage ÷ Current (R = V/I)."
+    },
+    {
+      "id": "sci_005",
+      "category": "science",
+      "difficulty": "easy",
+      "question": "How many chambers does the human heart have?",
+      "options": ["2", "3", "4", "5"],
+      "correct_answer": 2,
+      "explanation": "The human heart has 4 chambers: the right atrium, right ventricle, left atrium, and left ventricle. The right side pumps blood to the lungs; the left side pumps to the body."
+    },
+    {
+      "id": "sci_006",
+      "category": "science",
+      "difficulty": "hard",
+      "question": "What is Newton's Second Law of Motion?",
+      "options": ["Every action has an equal and opposite reaction", "An object at rest stays at rest unless acted upon", "Force equals mass times acceleration", "Energy cannot be created or destroyed"],
+      "correct_answer": 2,
+      "explanation": "Newton's Second Law states F = ma (Force = mass × acceleration). This means the acceleration of an object depends on the net force applied and its mass."
+    },
+    {
+      "id": "sci_007",
+      "category": "science",
+      "difficulty": "medium",
+      "question": "Which gas makes up the majority of Earth's atmosphere?",
+      "options": ["Oxygen", "Carbon dioxide", "Hydrogen", "Nitrogen"],
+      "correct_answer": 3,
+      "explanation": "Nitrogen (N2) makes up about 78% of Earth's atmosphere. Oxygen accounts for about 21%, and the remaining 1% includes argon, carbon dioxide, and other gases."
+    },
+    {
+      "id": "sci_008",
+      "category": "science",
+      "difficulty": "medium",
+      "question": "What is the powerhouse of the cell?",
+      "options": ["Nucleus", "Ribosome", "Mitochondria", "Vacuole"],
+      "correct_answer": 2,
+      "explanation": "Mitochondria are known as the powerhouse of the cell because they produce ATP (adenosine triphosphate), the energy currency used by the cell for various functions."
+    },
+    {
+      "id": "sci_009",
+      "category": "science",
+      "difficulty": "easy",
+      "question": "What type of rock is formed from cooled lava?",
+      "options": ["Sedimentary", "Metamorphic", "Igneous", "Limestone"],
+      "correct_answer": 2,
+      "explanation": "Igneous rocks form when magma (underground) or lava (above ground) cools and solidifies. 'Igneous' comes from the Latin word 'ignis' meaning fire."
+    },
+    {
+      "id": "sci_010",
+      "category": "science",
+      "difficulty": "hard",
+      "question": "Which element has the atomic number 79?",
+      "options": ["Silver", "Platinum", "Gold", "Copper"],
+      "correct_answer": 2,
+      "explanation": "Gold (Au, from the Latin 'aurum') has the atomic number 79, meaning it has 79 protons in its nucleus. It's known for its resistance to corrosion and electrical conductivity."
+    },
+    {
+      "id": "sci_011",
+      "category": "science",
+      "difficulty": "medium",
+      "question": "What is the speed of light in a vacuum?",
+      "options": ["3 × 10⁶ m/s", "3 × 10⁸ m/s", "3 × 10¹⁰ m/s", "3 × 10¹² m/s"],
+      "correct_answer": 1,
+      "explanation": "The speed of light in a vacuum is approximately 3 × 10⁸ m/s (300,000,000 meters per second or about 300,000 km/s). It is denoted by the letter 'c'."
+    },
+    {
+      "id": "sci_012",
+      "category": "science",
+      "difficulty": "easy",
+      "question": "What do we call animals that eat only plants?",
+      "options": ["Carnivores", "Omnivores", "Herbivores", "Insectivores"],
+      "correct_answer": 2,
+      "explanation": "Herbivores are animals that eat only plants. Examples: cows, rabbits, horses. Carnivores eat only meat, omnivores eat both plants and animals."
+    },
+    {
+      "id": "sci_013",
+      "category": "science",
+      "difficulty": "hard",
+      "question": "What is the pH of a neutral solution?",
+      "options": ["0", "7", "10", "14"],
+      "correct_answer": 1,
+      "explanation": "The pH scale runs from 0-14. pH 7 is neutral (pure water). Below 7 is acidic (lemon juice pH ~2), above 7 is alkaline/basic (baking soda pH ~9)."
+    },
+    {
+      "id": "sci_014",
+      "category": "science",
+      "difficulty": "medium",
+      "question": "Which vitamin is produced by the human skin when exposed to sunlight?",
+      "options": ["Vitamin A", "Vitamin B12", "Vitamin C", "Vitamin D"],
+      "correct_answer": 3,
+      "explanation": "Vitamin D is synthesized in the skin when exposed to UVB radiation from sunlight. It's important for bone health, immune function, and calcium absorption."
+    },
+    {
+      "id": "sci_015",
+      "category": "science",
+      "difficulty": "hard",
+      "question": "In which organ does digestion of proteins primarily begin?",
+      "options": ["Mouth", "Esophagus", "Stomach", "Small intestine"],
+      "correct_answer": 2,
+      "explanation": "Protein digestion primarily begins in the stomach, where pepsin (an enzyme) breaks down proteins. The acidic environment (HCl) also helps denature proteins for easier digestion."
+    },
+    {
+      "id": "gk_001",
+      "category": "general_knowledge",
+      "difficulty": "easy",
+      "question": "What is the capital city of France?",
+      "options": ["London", "Berlin", "Paris", "Madrid"],
+      "correct_answer": 2,
+      "explanation": "Paris is the capital and largest city of France. It is known as the 'City of Light' and is famous for the Eiffel Tower, the Louvre museum, and its rich culture."
+    },
+    {
+      "id": "gk_002",
+      "category": "general_knowledge",
+      "difficulty": "easy",
+      "question": "How many continents are there on Earth?",
+      "options": ["5", "6", "7", "8"],
+      "correct_answer": 2,
+      "explanation": "There are 7 continents on Earth: Africa, Antarctica, Asia, Australia (Oceania), Europe, North America, and South America."
+    },
+    {
+      "id": "gk_003",
+      "category": "general_knowledge",
+      "difficulty": "medium",
+      "question": "Who wrote the play 'Romeo and Juliet'?",
+      "options": ["Charles Dickens", "William Shakespeare", "Jane Austen", "Mark Twain"],
+      "correct_answer": 1,
+      "explanation": "'Romeo and Juliet' was written by William Shakespeare, likely between 1594-1596. Shakespeare is widely regarded as the greatest writer in the English language."
+    },
+    {
+      "id": "gk_004",
+      "category": "general_knowledge",
+      "difficulty": "medium",
+      "question": "What is the largest ocean on Earth?",
+      "options": ["Atlantic Ocean", "Indian Ocean", "Arctic Ocean", "Pacific Ocean"],
+      "correct_answer": 3,
+      "explanation": "The Pacific Ocean is the largest and deepest of Earth's oceans, covering more than 30% of Earth's surface and about 46% of Earth's water surface area."
+    },
+    {
+      "id": "gk_005",
+      "category": "general_knowledge",
+      "difficulty": "easy",
+      "question": "In which country was the Olympic Games originally held?",
+      "options": ["Italy", "Greece", "Egypt", "China"],
+      "correct_answer": 1,
+      "explanation": "The ancient Olympic Games originated in Olympia, Greece, in 776 BCE. The modern Olympics were revived in Athens, Greece, in 1896."
+    },
+    {
+      "id": "gk_006",
+      "category": "general_knowledge",
+      "difficulty": "medium",
+      "question": "What is the chemical symbol for gold?",
+      "options": ["Go", "Gd", "Au", "Ag"],
+      "correct_answer": 2,
+      "explanation": "Gold's chemical symbol is 'Au', from the Latin word 'aurum' meaning gold. Silver's symbol is 'Ag' from 'argentum'. Many element symbols come from Latin or Greek names."
+    },
+    {
+      "id": "gk_007",
+      "category": "general_knowledge",
+      "difficulty": "hard",
+      "question": "Who painted the Mona Lisa?",
+      "options": ["Michelangelo", "Raphael", "Leonardo da Vinci", "Donatello"],
+      "correct_answer": 2,
+      "explanation": "The Mona Lisa was painted by Leonardo da Vinci, likely between 1503-1519. It hangs in the Louvre Museum in Paris and is considered the world's most famous painting."
+    },
+    {
+      "id": "gk_008",
+      "category": "general_knowledge",
+      "difficulty": "medium",
+      "question": "What is the tallest mountain in the world?",
+      "options": ["K2", "Mount Everest", "Kangchenjunga", "Lhotse"],
+      "correct_answer": 1,
+      "explanation": "Mount Everest, located in the Himalayas on the border between Nepal and Tibet, is the world's tallest mountain at 8,848.86 meters (29,031.7 feet) above sea level."
+    },
+    {
+      "id": "gk_009",
+      "category": "general_knowledge",
+      "difficulty": "easy",
+      "question": "How many days are there in a leap year?",
+      "options": ["364", "365", "366", "367"],
+      "correct_answer": 2,
+      "explanation": "A leap year has 366 days. An extra day (February 29) is added every 4 years to keep the calendar in sync with the astronomical year (365.25 days)."
+    },
+    {
+      "id": "gk_010",
+      "category": "general_knowledge",
+      "difficulty": "hard",
+      "question": "Which ancient wonder of the world still exists today?",
+      "options": ["Hanging Gardens of Babylon", "Statue of Zeus at Olympia", "Great Pyramid of Giza", "Colossus of Rhodes"],
+      "correct_answer": 2,
+      "explanation": "The Great Pyramid of Giza is the only ancient wonder still largely intact. Built around 2560 BCE for Pharaoh Khufu, it stands at about 138.8 meters tall today."
+    },
+    {
+      "id": "gk_011",
+      "category": "general_knowledge",
+      "difficulty": "medium",
+      "question": "What is the currency of Japan?",
+      "options": ["Yuan", "Won", "Yen", "Ringgit"],
+      "correct_answer": 2,
+      "explanation": "The Yen (¥) is the official currency of Japan. It is the third most traded currency in the foreign exchange market after the US dollar and Euro."
+    },
+    {
+      "id": "gk_012",
+      "category": "general_knowledge",
+      "difficulty": "easy",
+      "question": "Which animal is known as the 'King of the Jungle'?",
+      "options": ["Tiger", "Elephant", "Lion", "Leopard"],
+      "correct_answer": 2,
+      "explanation": "The lion is traditionally known as the 'King of the Jungle', though lions actually live in grasslands and savannas. The title reflects their strength, power, and dominant nature."
+    },
+    {
+      "id": "gk_013",
+      "category": "general_knowledge",
+      "difficulty": "hard",
+      "question": "In what year did World War II end?",
+      "options": ["1943", "1944", "1945", "1946"],
+      "correct_answer": 2,
+      "explanation": "World War II ended in 1945. Germany surrendered on May 8, 1945 (V-E Day), and Japan surrendered on September 2, 1945 (V-J Day), officially ending the war."
+    },
+    {
+      "id": "gk_014",
+      "category": "general_knowledge",
+      "difficulty": "medium",
+      "question": "What is the longest river in the world?",
+      "options": ["Amazon", "Yangtze", "Mississippi", "Nile"],
+      "correct_answer": 3,
+      "explanation": "The Nile River in Africa is traditionally considered the world's longest river at approximately 6,650 km (4,130 miles). It flows through northeastern Africa into the Mediterranean Sea."
+    },
+    {
+      "id": "gk_015",
+      "category": "general_knowledge",
+      "difficulty": "medium",
+      "question": "Who invented the telephone?",
+      "options": ["Thomas Edison", "Nikola Tesla", "Alexander Graham Bell", "Guglielmo Marconi"],
+      "correct_answer": 2,
+      "explanation": "Alexander Graham Bell is credited with inventing the telephone and was awarded the first patent for it in 1876. He made the first successful telephone call to his assistant Thomas Watson."
+    }
+  ]
+}
