@@ -22,6 +22,17 @@ class _HomeScreenState extends State<HomeScreen> {
     super.initState();
     WidgetsBinding.instance.addPostFrameCallback((_) {
       context.read<QuizProvider>().loadHistory();
+      
+      final questionService = context.read<QuestionService>();
+      if (questionService.loadError != null) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text(questionService.loadError!),
+            backgroundColor: AppTheme.errorRed,
+            duration: const Duration(seconds: 4),
+          ),
+        );
+      }
     });
   }
 
@@ -51,7 +62,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final categories = QuestionService.categories;
+    final categories = context.read<QuestionService>().categories;
 
     return Scaffold(
       backgroundColor: AppTheme.backgroundGrey,

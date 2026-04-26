@@ -21,7 +21,7 @@ class Question {
     return Question(
       id: json['id'] as String,
       category: json['category'] as String,
-      difficulty: json['difficulty'] as String,
+      difficulty: json['difficulty'].toString(),
       question: json['question'] as String,
       options: List<String>.from(json['options'] as List),
       correctAnswer: json['correct_answer'] as int,

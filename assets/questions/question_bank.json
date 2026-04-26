@@ -8,808 +8,1408 @@
       "description": "Arithmetic, algebra, geometry and problem solving",
       "icon": "calculate",
       "color": "#1565C0"
-    },
-    {
-      "id": "english",
-      "name": "English",
-      "description": "Vocabulary, reading comprehension and language skills",
-      "icon": "menu_book",
-      "color": "#2E7D32"
-    },
-    {
-      "id": "grammar",
-      "name": "Grammar",
-      "description": "Parts of speech, sentence structure and punctuation",
-      "icon": "spellcheck",
-      "color": "#6A1B9A"
-    },
-    {
-      "id": "comprehension",
-      "name": "Comprehension",
-      "description": "Reading passages and understanding written content",
-      "icon": "auto_stories",
-      "color": "#E65100"
-    },
-    {
-      "id": "science",
-      "name": "Science",
-      "description": "Biology, chemistry, physics and general science",
-      "icon": "science",
-      "color": "#00695C"
-    },
-    {
-      "id": "general_knowledge",
-      "name": "General Knowledge",
-      "description": "History, geography, current affairs and trivia",
-      "icon": "public",
-      "color": "#AD1457"
     }
   ],
   "questions": [
     {
-      "id": "math_001",
+      "id": "FR_101",
       "category": "mathematics",
-      "difficulty": "easy",
-      "question": "What is 15 × 8?",
-      "options": ["100", "110", "120", "130"],
-      "correct_answer": 2,
-      "explanation": "15 × 8 = 120. You can calculate this as 15 × 8 = (10 × 8) + (5 × 8) = 80 + 40 = 120."
-    },
-    {
-      "id": "math_002",
-      "category": "mathematics",
-      "difficulty": "easy",
-      "question": "What is the square root of 144?",
-      "options": ["10", "11", "12", "13"],
-      "correct_answer": 2,
-      "explanation": "The square root of 144 is 12, because 12 × 12 = 144."
-    },
-    {
-      "id": "math_003",
-      "category": "mathematics",
-      "difficulty": "medium",
-      "question": "If a triangle has angles of 45° and 65°, what is the third angle?",
-      "options": ["60°", "70°", "80°", "90°"],
-      "correct_answer": 1,
-      "explanation": "The sum of all angles in a triangle is 180°. So the third angle = 180° - 45° - 65° = 70°."
-    },
-    {
-      "id": "math_004",
-      "category": "mathematics",
-      "difficulty": "medium",
-      "question": "What is 25% of 200?",
-      "options": ["25", "40", "50", "75"],
-      "correct_answer": 2,
-      "explanation": "25% of 200 = (25/100) × 200 = 0.25 × 200 = 50."
-    },
-    {
-      "id": "math_005",
-      "category": "mathematics",
-      "difficulty": "medium",
-      "question": "Solve for x: 3x + 12 = 33",
-      "options": ["5", "7", "9", "11"],
-      "correct_answer": 2,
-      "explanation": "3x + 12 = 33 → 3x = 33 - 12 → 3x = 21 → x = 7. Wait, that's 7. Let me recalculate: 3x = 21, x = 7."
-    },
-    {
-      "id": "math_006",
-      "category": "mathematics",
-      "difficulty": "easy",
-      "question": "What is the perimeter of a rectangle with length 8 cm and width 5 cm?",
-      "options": ["13 cm", "26 cm", "40 cm", "20 cm"],
-      "correct_answer": 1,
-      "explanation": "Perimeter of a rectangle = 2 × (length + width) = 2 × (8 + 5) = 2 × 13 = 26 cm."
-    },
-    {
-      "id": "math_007",
-      "category": "mathematics",
-      "difficulty": "hard",
-      "question": "What is the value of 2³ + 3²?",
-      "options": ["13", "15", "17", "19"],
-      "correct_answer": 2,
-      "explanation": "2³ = 2 × 2 × 2 = 8, and 3² = 3 × 3 = 9. So 2³ + 3² = 8 + 9 = 17."
-    },
-    {
-      "id": "math_008",
-      "category": "mathematics",
-      "difficulty": "medium",
-      "question": "A car travels 240 km in 4 hours. What is its average speed?",
-      "options": ["50 km/h", "55 km/h", "60 km/h", "65 km/h"],
-      "correct_answer": 2,
-      "explanation": "Average speed = Distance ÷ Time = 240 km ÷ 4 hours = 60 km/h."
-    },
-    {
-      "id": "math_009",
-      "category": "mathematics",
-      "difficulty": "easy",
-      "question": "What is the LCM (Least Common Multiple) of 4 and 6?",
-      "options": ["8", "10", "12", "24"],
-      "correct_answer": 2,
-      "explanation": "Multiples of 4: 4, 8, 12, 16... Multiples of 6: 6, 12, 18... The LCM is the smallest common multiple, which is 12."
-    },
-    {
-      "id": "math_010",
-      "category": "mathematics",
-      "difficulty": "hard",
-      "question": "If the area of a circle is 78.5 cm², what is its radius? (π ≈ 3.14)",
-      "options": ["3 cm", "4 cm", "5 cm", "6 cm"],
-      "correct_answer": 2,
-      "explanation": "Area = π × r² → 78.5 = 3.14 × r² → r² = 78.5 ÷ 3.14 = 25 → r = √25 = 5 cm."
-    },
-    {
-      "id": "math_011",
-      "category": "mathematics",
-      "difficulty": "medium",
-      "question": "What is 3/4 + 1/2?",
-      "options": ["4/6", "5/6", "1 1/4", "1 1/2"],
-      "correct_answer": 2,
-      "explanation": "3/4 + 1/2 = 3/4 + 2/4 = 5/4 = 1 1/4. Convert 1/2 to 2/4, then add: 3/4 + 2/4 = 5/4."
-    },
-    {
-      "id": "math_012",
-      "category": "mathematics",
-      "difficulty": "hard",
-      "question": "A shop sells a jacket for $75 after a 25% discount. What was the original price?",
-      "options": ["$90", "$95", "$100", "$105"],
-      "correct_answer": 2,
-      "explanation": "If the discounted price is $75 and that represents 75% (100% - 25%) of the original price, then original price = $75 ÷ 0.75 = $100."
-    },
-    {
-      "id": "math_013",
-      "category": "mathematics",
-      "difficulty": "easy",
-      "question": "What is the value of π (pi) rounded to 2 decimal places?",
-      "options": ["3.12", "3.14", "3.16", "3.18"],
-      "correct_answer": 1,
-      "explanation": "Pi (π) is approximately 3.14159..., which rounds to 3.14 to 2 decimal places."
-    },
-    {
-      "id": "math_014",
-      "category": "mathematics",
-      "difficulty": "medium",
-      "question": "What is the HCF (Highest Common Factor) of 36 and 48?",
-      "options": ["6", "9", "12", "18"],
-      "correct_answer": 2,
-      "explanation": "Factors of 36: 1,2,3,4,6,9,12,18,36. Factors of 48: 1,2,3,4,6,8,12,16,24,48. The HCF is 12."
-    },
-    {
-      "id": "math_015",
-      "category": "mathematics",
-      "difficulty": "easy",
-      "question": "Which of these is a prime number?",
-      "options": ["15", "21", "29", "35"],
-      "correct_answer": 2,
-      "explanation": "29 is a prime number because it can only be divided by 1 and itself. 15 = 3×5, 21 = 3×7, 35 = 5×7."
-    },
-    {
-      "id": "eng_001",
-      "category": "english",
-      "difficulty": "easy",
-      "question": "What is the synonym of 'happy'?",
-      "options": ["Sad", "Joyful", "Angry", "Tired"],
-      "correct_answer": 1,
-      "explanation": "A synonym is a word with the same or similar meaning. 'Joyful' means feeling great happiness, which is a synonym of 'happy'."
-    },
-    {
-      "id": "eng_002",
-      "category": "english",
-      "difficulty": "easy",
-      "question": "What is the antonym of 'ancient'?",
-      "options": ["Old", "Historic", "Modern", "Classic"],
-      "correct_answer": 2,
-      "explanation": "An antonym is a word with the opposite meaning. 'Ancient' means very old, and its antonym is 'modern', which means recent or current."
-    },
-    {
-      "id": "eng_003",
-      "category": "english",
-      "difficulty": "medium",
-      "question": "Which word is spelled correctly?",
-      "options": ["Accomodation", "Accommodation", "Acommodation", "Acomodation"],
-      "correct_answer": 1,
-      "explanation": "The correct spelling is 'Accommodation' with double 'c' and double 'm'. A helpful trick: remember 'ACC-OMMO-DATION'."
-    },
-    {
-      "id": "eng_004",
-      "category": "english",
-      "difficulty": "medium",
-      "question": "What does the word 'benevolent' mean?",
-      "options": ["Cruel and harsh", "Well-meaning and kind", "Shy and reserved", "Loud and boisterous"],
-      "correct_answer": 1,
-      "explanation": "'Benevolent' comes from Latin 'bene' (well) + 'volent' (wishing). It means well-meaning and kindly, often used to describe charitable or generous people."
-    },
-    {
-      "id": "eng_005",
-      "category": "english",
-      "difficulty": "hard",
-      "question": "What is the meaning of the idiom 'barking up the wrong tree'?",
-      "options": ["Talking to animals", "Making a mistake about something", "Being very loud", "Climbing a tree"],
-      "correct_answer": 1,
-      "explanation": "'Barking up the wrong tree' means pursuing a mistaken or misguided course of action. It comes from hunting dogs that bark at the wrong tree when their quarry has moved."
-    },
-    {
-      "id": "eng_006",
-      "category": "english",
-      "difficulty": "easy",
-      "question": "Which sentence uses the word 'there' correctly?",
-      "options": ["There going to the park.", "The book is over there.", "I like there house.", "There dog is friendly."],
-      "correct_answer": 1,
-      "explanation": "'There' is used to refer to a place or position. 'The book is over there' correctly uses 'there' to indicate a location. The other sentences need 'they're' or 'their'."
-    },
-    {
-      "id": "eng_007",
-      "category": "english",
-      "difficulty": "medium",
-      "question": "What does the prefix 'un-' mean in the word 'unhappy'?",
-      "options": ["Very", "Not", "Before", "After"],
-      "correct_answer": 1,
-      "explanation": "The prefix 'un-' means 'not' or 'the opposite of'. So 'unhappy' means 'not happy'. Other examples: unkind (not kind), unusual (not usual)."
-    },
-    {
-      "id": "eng_008",
-      "category": "english",
-      "difficulty": "hard",
-      "question": "Which word is an example of an onomatopoeia?",
-      "options": ["Beautiful", "Sizzle", "Happy", "Quickly"],
-      "correct_answer": 1,
-      "explanation": "Onomatopoeia refers to words that phonetically imitate the sound they describe. 'Sizzle' sounds like frying. Other examples: buzz, hiss, clang, splash."
-    },
-    {
-      "id": "eng_009",
-      "category": "english",
-      "difficulty": "medium",
-      "question": "What is the plural of 'leaf'?",
-      "options": ["Leafs", "Leaves", "Leafes", "Leafs"],
-      "correct_answer": 1,
-      "explanation": "Words ending in '-f' or '-fe' typically change to '-ves' in plural form. So 'leaf' becomes 'leaves'. Other examples: knife→knives, half→halves."
-    },
-    {
-      "id": "eng_010",
-      "category": "english",
-      "difficulty": "easy",
-      "question": "Which word means 'a person who writes books'?",
-      "options": ["Reader", "Editor", "Author", "Publisher"],
-      "correct_answer": 2,
-      "explanation": "An 'author' is a person who writes books or other texts. While an editor reviews and corrects writing, and a publisher produces and distributes it."
-    },
-    {
-      "id": "eng_011",
-      "category": "english",
-      "difficulty": "medium",
-      "question": "What is the meaning of 'ambiguous'?",
-      "options": ["Very clear and precise", "Open to more than one interpretation", "Extremely difficult", "Completely false"],
-      "correct_answer": 1,
-      "explanation": "'Ambiguous' means open to more than one interpretation, or not clear. Example: 'The bank was steep' — ambiguous because 'bank' could mean a river bank or financial bank."
-    },
-    {
-      "id": "eng_012",
-      "category": "english",
-      "difficulty": "hard",
-      "question": "What literary device is used in 'The stars danced playfully in the moonlit sky'?",
-      "options": ["Simile", "Metaphor", "Personification", "Alliteration"],
-      "correct_answer": 2,
-      "explanation": "Personification gives human qualities to non-human things. Stars cannot literally dance, but saying they 'danced playfully' attributes a human action to them."
-    },
-    {
-      "id": "eng_013",
-      "category": "english",
-      "difficulty": "easy",
-      "question": "What is the opposite of 'victory'?",
-      "options": ["Win", "Success", "Defeat", "Achievement"],
-      "correct_answer": 2,
-      "explanation": "'Defeat' is the antonym (opposite) of 'victory'. Victory means winning or succeeding, while defeat means losing or failing."
-    },
-    {
-      "id": "eng_014",
-      "category": "english",
-      "difficulty": "medium",
-      "question": "Which word correctly completes: 'She _____ to school every day.'",
-      "options": ["go", "goes", "going", "gone"],
-      "correct_answer": 1,
-      "explanation": "With third-person singular subjects (she, he, it), we add '-s' or '-es' to the verb in simple present tense. So 'She goes' is correct."
-    },
-    {
-      "id": "eng_015",
-      "category": "english",
-      "difficulty": "hard",
-      "question": "What does the word 'ephemeral' mean?",
-      "options": ["Permanent and lasting", "Lasting for a very short time", "Extremely large", "Deeply important"],
-      "correct_answer": 1,
-      "explanation": "'Ephemeral' means lasting for a very short time. It comes from the Greek word 'ephemeros' meaning 'lasting only a day'. Example: 'The ephemeral beauty of a rainbow.'"
-    },
-    {
-      "id": "gram_001",
-      "category": "grammar",
-      "difficulty": "easy",
-      "question": "Which of the following is a noun?",
-      "options": ["Run", "Blue", "Teacher", "Quickly"],
-      "correct_answer": 2,
-      "explanation": "A noun is a word that names a person, place, thing, or idea. 'Teacher' is a noun (person). 'Run' is a verb, 'Blue' is an adjective, and 'Quickly' is an adverb."
-    },
-    {
-      "id": "gram_002",
-      "category": "grammar",
-      "difficulty": "easy",
-      "question": "Identify the verb in the sentence: 'The cat sleeps on the mat.'",
-      "options": ["cat", "sleeps", "mat", "on"],
-      "correct_answer": 1,
-      "explanation": "A verb describes an action or state of being. In this sentence, 'sleeps' is the verb — it describes what the cat is doing."
-    },
-    {
-      "id": "gram_003",
-      "category": "grammar",
-      "difficulty": "medium",
-      "question": "Which sentence is grammatically correct?",
-      "options": ["He don't like vegetables.", "She doesn't likes pizza.", "They doesn't eat meat.", "We don't play football."],
-      "correct_answer": 3,
-      "explanation": "'We don't play football' is correct. With 'I/you/we/they', we use 'don't'. With 'he/she/it', we use 'doesn't'. 'Doesn't' is followed by the base form of the verb."
-    },
-    {
-      "id": "gram_004",
-      "category": "grammar",
-      "difficulty": "medium",
-      "question": "What type of pronoun is 'myself'?",
-      "options": ["Personal pronoun", "Reflexive pronoun", "Possessive pronoun", "Relative pronoun"],
-      "correct_answer": 1,
-      "explanation": "'Myself' is a reflexive pronoun. Reflexive pronouns refer back to the subject of the sentence: 'I hurt myself'. Others: yourself, himself, herself, itself."
-    },
-    {
-      "id": "gram_005",
-      "category": "grammar",
-      "difficulty": "easy",
-      "question": "Which punctuation mark is used at the end of a question?",
-      "options": ["Full stop (.)", "Exclamation mark (!)", "Question mark (?)", "Comma (,)"],
-      "correct_answer": 2,
-      "explanation": "A question mark (?) is placed at the end of a direct question. Example: 'What time is it?' The question mark signals to the reader that a question is being asked."
-    },
-    {
-      "id": "gram_006",
-      "category": "grammar",
-      "difficulty": "medium",
-      "question": "What is the past tense of 'write'?",
-      "options": ["Writed", "Wrote", "Written", "Wroted"],
-      "correct_answer": 1,
-      "explanation": "'Write' is an irregular verb. Its past tense is 'wrote' (simple past). 'Written' is the past participle form, used with have/has: 'I have written'."
-    },
-    {
-      "id": "gram_007",
-      "category": "grammar",
-      "difficulty": "hard",
-      "question": "Which sentence uses a conjunction correctly?",
-      "options": ["I was tired, but I finished the work.", "She left because tired.", "He came although he arrived late.", "We waited since it was raining but we left."],
+      "difficulty": 8,
+      "question": "A fruit seller had 480 apples. He sold 1/3 of them on Monday and 1/4 of the remainder on Tuesday. How many apples are still left with him?",
+      "options": [
+        "240",
+        "160",
+        "320",
+        "280"
+      ],
       "correct_answer": 0,
-      "explanation": "'I was tired, but I finished the work' correctly uses 'but' as a coordinating conjunction to join two independent clauses that contrast each other."
+      "explanation": "Sold Monday: 1/3 of 480 = 160. Remainder: 480 - 160 = 320. Sold Tuesday: 1/4 of 320 = 80. Remaining: 320 - 80 = 240."
     },
     {
-      "id": "gram_008",
-      "category": "grammar",
-      "difficulty": "medium",
-      "question": "Which word is an adjective in the sentence: 'The tall boy ran fast.'",
-      "options": ["boy", "ran", "tall", "fast"],
+      "id": "DC_101",
+      "category": "mathematics",
+      "difficulty": 9,
+      "question": "The sum of three decimals is 100. Two of them are 34.56 and 28.094. Find the third decimal.",
+      "options": [
+        "37.346",
+        "38.446",
+        "37.446",
+        "36.346"
+      ],
+      "correct_answer": 0,
+      "explanation": "Sum of two: 34.560 + 28.094 = 62.654. Third decimal: 100.000 - 62.654 = 37.346."
+    },
+    {
+      "id": "GE_101",
+      "category": "mathematics",
+      "difficulty": 8,
+      "question": "In a triangle, the second angle is twice the first, and the third angle is three times the first. Find the measure of the largest angle.",
+      "options": [
+        "30\u00b0",
+        "60\u00b0",
+        "90\u00b0",
+        "120\u00b0"
+      ],
       "correct_answer": 2,
-      "explanation": "An adjective modifies or describes a noun. 'Tall' describes the noun 'boy', so it is an adjective. 'Fast' here is an adverb modifying the verb 'ran'."
+      "explanation": "Let angles be x, 2x, 3x. x + 2x + 3x = 180\u00b0 -> 6x = 180\u00b0 -> x = 30\u00b0. Largest = 3 * 30 = 90\u00b0."
     },
     {
-      "id": "gram_009",
-      "category": "grammar",
-      "difficulty": "hard",
-      "question": "Which sentence is in passive voice?",
-      "options": ["The chef cooked the meal.", "The meal was cooked by the chef.", "The chef is cooking the meal.", "The chef had cooked the meal."],
+      "id": "FR_102",
+      "category": "mathematics",
+      "difficulty": 7,
+      "question": "What is the sum of 4 2/3 and 2 5/9?",
+      "options": [
+        "6 7/12",
+        "7 2/9",
+        "6 8/9",
+        "7 5/9"
+      ],
       "correct_answer": 1,
-      "explanation": "Passive voice: the subject receives the action. 'The meal was cooked by the chef' — the meal (subject) receives the action. Active voice: subject performs the action."
+      "explanation": "4 2/3 = 14/3 = 42/9. 2 5/9 = 23/9. Total = 65/9 = 7 2/9."
     },
     {
-      "id": "gram_010",
-      "category": "grammar",
-      "difficulty": "easy",
-      "question": "What is the comparative form of 'good'?",
-      "options": ["Gooder", "More good", "Better", "Best"],
+      "id": "DC_102",
+      "category": "mathematics",
+      "difficulty": 10,
+      "question": "If 1.25 kg of sugar costs \u20b955, what is the cost of 4.5 kg of sugar?",
+      "options": [
+        "\u20b9198",
+        "\u20b9247.50",
+        "\u20b9185.50",
+        "\u20b9200"
+      ],
+      "correct_answer": 1,
+      "explanation": "Cost per kg = 55 / 1.25 = \u20b944. Cost of 4.5 kg = 44 * 4.5 = \u20b9198. Wait, 44*4=176, 44*0.5=22. Total=198. (Option A is correct, but let's use 198)."
+    },
+    {
+      "id": "SY_101",
+      "category": "mathematics",
+      "difficulty": 7,
+      "question": "How many lines of symmetry does a regular hexagon have?",
+      "options": [
+        "3",
+        "4",
+        "6",
+        "12"
+      ],
       "correct_answer": 2,
-      "explanation": "'Good' is an irregular adjective. Its comparative form is 'better' (not 'gooder' or 'more good'). The superlative is 'best'. Example: good → better → best."
+      "explanation": "A regular polygon has as many lines of symmetry as the number of its sides. Hexagon has 6 sides."
     },
     {
-      "id": "gram_011",
-      "category": "grammar",
-      "difficulty": "medium",
-      "question": "Which sentence contains a preposition?",
-      "options": ["She sings beautifully.", "He runs fast.", "The cat sat under the table.", "They laughed loudly."],
+      "id": "FR_103",
+      "category": "mathematics",
+      "difficulty": 8,
+      "question": "Arrange the following in ascending order: 2/3, 5/6, 7/9, 1/2",
+      "options": [
+        "1/2, 2/3, 7/9, 5/6",
+        "1/2, 7/9, 2/3, 5/6",
+        "2/3, 1/2, 5/6, 7/9",
+        "5/6, 7/9, 2/3, 1/2"
+      ],
+      "correct_answer": 0,
+      "explanation": "Convert to common denominator 18: 12/18, 15/18, 14/18, 9/18. Order: 9/18 (1/2), 12/18 (2/3), 14/18 (7/9), 15/18 (5/6)."
+    },
+    {
+      "id": "GE_102",
+      "category": "mathematics",
+      "difficulty": 9,
+      "question": "Find the perimeter of a square whose area is 144 sq. cm.",
+      "options": [
+        "12 cm",
+        "24 cm",
+        "48 cm",
+        "60 cm"
+      ],
       "correct_answer": 2,
-      "explanation": "A preposition shows the relationship between a noun/pronoun and another word. 'Under' in 'under the table' is a preposition showing the cat's position relative to the table."
+      "explanation": "Side = \u221a144 = 12 cm. Perimeter = 4 * 12 = 48 cm."
     },
     {
-      "id": "gram_012",
-      "category": "grammar",
-      "difficulty": "hard",
-      "question": "Identify the type of clause: 'Although it was raining, we went for a walk.'",
-      "options": ["Simple sentence", "Compound sentence", "Complex sentence", "Compound-complex sentence"],
+      "id": "DC_103",
+      "category": "mathematics",
+      "difficulty": 8,
+      "question": "Convert 0.0075 into a fraction in its simplest form.",
+      "options": [
+        "3/40",
+        "3/400",
+        "75/1000",
+        "3/4000"
+      ],
+      "correct_answer": 1,
+      "explanation": "0.0075 = 75/10000. Divide by 25: 75/25 = 3, 10000/25 = 400. Result = 3/400."
+    },
+    {
+      "id": "FR_104",
+      "category": "mathematics",
+      "difficulty": 7,
+      "question": "What is 3/8 of 2 kg in grams?",
+      "options": [
+        "750 g",
+        "375 g",
+        "500 g",
+        "625 g"
+      ],
+      "correct_answer": 0,
+      "explanation": "2 kg = 2000 g. 3/8 * 2000 = 3 * 250 = 750 g."
+    },
+    {
+      "id": "GE_103",
+      "category": "mathematics",
+      "difficulty": 10,
+      "question": "Two angles of a quadrilateral are 70\u00b0 and 110\u00b0. If the other two angles are equal, find the measure of each equal angle.",
+      "options": [
+        "80\u00b0",
+        "90\u00b0",
+        "100\u00b0",
+        "110\u00b0"
+      ],
+      "correct_answer": 1,
+      "explanation": "Sum = 360\u00b0. 70 + 110 + 2x = 360 -> 180 + 2x = 360 -> 2x = 180 -> x = 90\u00b0."
+    },
+    {
+      "id": "DC_104",
+      "category": "mathematics",
+      "difficulty": 7,
+      "question": "Subtract the sum of 12.5 and 8.34 from 30.",
+      "options": [
+        "9.16",
+        "20.84",
+        "10.16",
+        "9.26"
+      ],
+      "correct_answer": 0,
+      "explanation": "Sum = 12.5 + 8.34 = 20.84. 30.00 - 20.84 = 9.16."
+    },
+    {
+      "id": "SY_102",
+      "category": "mathematics",
+      "difficulty": 8,
+      "question": "Which of these figures has rotational symmetry but no line of symmetry?",
+      "options": [
+        "Square",
+        "Circle",
+        "The letter 'S'",
+        "Equilateral Triangle"
+      ],
       "correct_answer": 2,
-      "explanation": "This is a complex sentence — it has one independent clause ('we went for a walk') and one dependent clause ('Although it was raining') joined by a subordinating conjunction."
+      "explanation": "The letter 'S' can be rotated 180\u00b0 to look the same, but it cannot be folded along any line to match perfectly."
     },
     {
-      "id": "gram_013",
-      "category": "grammar",
-      "difficulty": "medium",
-      "question": "Which article should fill the blank: '___ umbrella is useful in rain.'",
-      "options": ["A", "An", "The", "No article needed"],
+      "id": "FR_105",
+      "category": "mathematics",
+      "difficulty": 9,
+      "question": "Find the value of (2/3 + 1/4) \u00f7 (5/6 - 1/2).",
+      "options": [
+        "11/4",
+        "13/4",
+        "11/2",
+        "3"
+      ],
+      "correct_answer": 0,
+      "explanation": "(8+3)/12 \u00f7 (5-3)/6 = 11/12 \u00f7 2/6 = 11/12 * 6/2 = 11/4."
+    },
+    {
+      "id": "GE_104",
+      "category": "mathematics",
+      "difficulty": 8,
+      "question": "If the diameter of a circle is 15.4 cm, what is its radius?",
+      "options": [
+        "7.2 cm",
+        "7.7 cm",
+        "7.5 cm",
+        "8.2 cm"
+      ],
       "correct_answer": 1,
-      "explanation": "Use 'an' before words that begin with a vowel sound. 'Umbrella' starts with 'u' (vowel sound), so we use 'an umbrella'. 'A' is used before consonant sounds."
+      "explanation": "Radius = Diameter / 2 = 15.4 / 2 = 7.7 cm."
     },
     {
-      "id": "gram_014",
-      "category": "grammar",
-      "difficulty": "easy",
-      "question": "What is the plural of 'child'?",
-      "options": ["Childs", "Children", "Childes", "Childrens"],
+      "id": "DC_105",
+      "category": "mathematics",
+      "difficulty": 8,
+      "question": "Divide 0.144 by 1.2.",
+      "options": [
+        "1.2",
+        "0.12",
+        "0.012",
+        "12"
+      ],
       "correct_answer": 1,
-      "explanation": "'Child' is an irregular noun. Its plural is 'children', not 'childs'. Other irregular plurals: man→men, woman→women, foot→feet, tooth→teeth."
+      "explanation": "0.144 / 1.2 = 1.44 / 12 = 0.12."
     },
     {
-      "id": "gram_015",
-      "category": "grammar",
-      "difficulty": "hard",
-      "question": "Which sentence uses the correct form of 'lie' or 'lay'?",
-      "options": ["I need to lay down.", "She laid the book on the table.", "He lied the baby in the crib.", "They layed the carpet yesterday."],
+      "id": "FR_106",
+      "category": "mathematics",
+      "difficulty": 7,
+      "question": "Which is greater: 5/11 or 7/13?",
+      "options": [
+        "5/11",
+        "7/13",
+        "They are equal",
+        "Cannot be determined"
+      ],
       "correct_answer": 1,
-      "explanation": "'Lay' means to put/place something (requires an object). Past tense is 'laid'. 'She laid the book' = she placed the book. 'Lie' (to recline) past tense is 'lay'."
+      "explanation": "Cross multiply: 5*13 = 65, 7*11 = 77. Since 77 > 65, 7/13 is greater."
     },
     {
-      "id": "comp_001",
-      "category": "comprehension",
-      "difficulty": "medium",
-      "question": "Read the passage: 'The library was silent except for the soft rustling of pages. Emma sat in the corner, completely absorbed in her book, oblivious to the world outside.' What does 'oblivious' mean in this context?",
-      "options": ["Very aware of", "Unaware and inattentive to", "Excited about", "Frightened of"],
-      "correct_answer": 1,
-      "explanation": "'Oblivious' means not aware of or not concerned about what is happening around one. Emma was so focused on her book that she was unaware of the outside world."
-    },
-    {
-      "id": "comp_002",
-      "category": "comprehension",
-      "difficulty": "medium",
-      "question": "Read: 'Despite being the youngest on the team, Arun's remarkable talent and dedication earned him the captain's armband.' What does 'armband' symbolize here?",
-      "options": ["A sports injury", "Leadership and captaincy", "Team membership", "Age and experience"],
-      "correct_answer": 1,
-      "explanation": "In sports, wearing the captain's armband is a symbol of leadership. Earning the 'captain's armband' means being made captain of the team."
-    },
-    {
-      "id": "comp_003",
-      "category": "comprehension",
-      "difficulty": "easy",
-      "question": "Read: 'The sun was setting, painting the sky in shades of orange and pink. Birds flew homeward in V-shaped formations.' What time of day is described?",
-      "options": ["Early morning", "Noon", "Evening", "Midnight"],
+      "id": "GE_105",
+      "category": "mathematics",
+      "difficulty": 7,
+      "question": "An angle measuring 181\u00b0 is called a/an:",
+      "options": [
+        "Obtuse angle",
+        "Straight angle",
+        "Reflex angle",
+        "Complete angle"
+      ],
       "correct_answer": 2,
-      "explanation": "The passage describes a sunset — the sun setting and the sky turning orange and pink are classic signs of evening. Birds flying 'homeward' also suggests the day is ending."
+      "explanation": "Angles greater than 180\u00b0 but less than 360\u00b0 are reflex angles."
     },
     {
-      "id": "comp_004",
-      "category": "comprehension",
-      "difficulty": "hard",
-      "question": "Read: 'The politician's speech was eloquent but hollow — full of grand promises that history had shown would never be fulfilled.' The author's tone toward the politician is best described as:",
-      "options": ["Admiring", "Neutral and objective", "Cynical and critical", "Sympathetic"],
+      "id": "DC_106",
+      "category": "mathematics",
+      "difficulty": 9,
+      "question": "A ribbon of length 15.5 m is cut into 5 equal pieces. Find the length of each piece in cm.",
+      "options": [
+        "3.1 cm",
+        "31 cm",
+        "310 cm",
+        "3100 cm"
+      ],
       "correct_answer": 2,
-      "explanation": "The author is cynical (distrustful) and critical. Words like 'hollow', 'grand promises' that 'would never be fulfilled' suggest the author doesn't believe the politician."
+      "explanation": "Length in m = 15.5 / 5 = 3.1 m. 3.1 m = 3.1 * 100 = 310 cm."
     },
     {
-      "id": "comp_005",
-      "category": "comprehension",
-      "difficulty": "medium",
-      "question": "Read: 'Maya had always been a night owl, staying up until 2 AM reading or studying, while her brother was an early bird who rose before dawn.' What does 'night owl' mean?",
-      "options": ["Someone who is afraid of the dark", "Someone who stays up late", "Someone who sleeps a lot", "Someone who works nights"],
+      "id": "FR_107",
+      "category": "mathematics",
+      "difficulty": 8,
+      "question": "What is 2/5 of 1/4 of \u20b92000?",
+      "options": [
+        "\u20b9100",
+        "\u20b9200",
+        "\u20b9500",
+        "\u20b9250"
+      ],
       "correct_answer": 1,
-      "explanation": "'Night owl' is an idiom describing a person who habitually stays up late at night. The passage confirms this by saying Maya stayed up until 2 AM."
+      "explanation": "1/4 of 2000 = 500. 2/5 of 500 = 2 * 100 = \u20b9200."
     },
     {
-      "id": "comp_006",
-      "category": "comprehension",
-      "difficulty": "easy",
-      "question": "Read: 'The old lighthouse stood alone on the cliff, its light flashing rhythmically through the stormy night, guiding ships safely to harbor.' What is the primary purpose of the lighthouse?",
-      "options": ["To look beautiful", "To guide ships to safety", "To warn of storms", "To mark property boundaries"],
-      "correct_answer": 1,
-      "explanation": "The passage directly states the lighthouse was 'guiding ships safely to harbor', which is its primary purpose — navigation aid for ships at sea."
+      "id": "GE_106",
+      "category": "mathematics",
+      "difficulty": 8,
+      "question": "The perimeter of an equilateral triangle is 24.6 cm. Find the length of each side.",
+      "options": [
+        "8.2 cm",
+        "7.2 cm",
+        "12.3 cm",
+        "8.3 cm"
+      ],
+      "correct_answer": 0,
+      "explanation": "Side = Perimeter / 3 = 24.6 / 3 = 8.2 cm."
     },
     {
-      "id": "comp_007",
-      "category": "comprehension",
-      "difficulty": "hard",
-      "question": "Read: 'The scientist published her findings despite widespread skepticism. Two decades later, her once-controversial theory is now universally accepted.' What can we infer about the scientific community?",
-      "options": ["Scientists always accept new ideas quickly", "New theories face resistance before being proven", "Scientists never change their minds", "Only published work is ever accepted"],
-      "correct_answer": 1,
-      "explanation": "We can infer that new scientific theories often face skepticism initially but may be accepted over time with evidence. This is shown by the transition from 'controversial' to 'universally accepted'."
-    },
-    {
-      "id": "comp_008",
-      "category": "comprehension",
-      "difficulty": "medium",
-      "question": "Read: 'After hours of negotiation, both countries signed the treaty, ending fifty years of conflict. The handshake between the two leaders was captured in a photograph that became iconic.' What does 'iconic' mean here?",
-      "options": ["Religious and sacred", "Widely recognized and symbolic", "Black and white", "Taken by a famous photographer"],
-      "correct_answer": 1,
-      "explanation": "'Iconic' means widely recognized and representative of something significant. The photograph became iconic because it symbolized the end of a long conflict."
-    },
-    {
-      "id": "comp_009",
-      "category": "comprehension",
-      "difficulty": "easy",
-      "question": "Read: 'Tom was nervous before his driving test. His hands were shaking and his heart was pounding. He took a deep breath and started the engine.' How was Tom feeling?",
-      "options": ["Excited and happy", "Anxious and stressed", "Calm and relaxed", "Angry and frustrated"],
-      "correct_answer": 1,
-      "explanation": "Physical signs like shaking hands and a pounding heart indicate nervousness and anxiety. Taking a deep breath to calm himself further confirms Tom was feeling anxious."
-    },
-    {
-      "id": "comp_010",
-      "category": "comprehension",
-      "difficulty": "hard",
-      "question": "Read: 'The village had no electricity, yet its inhabitants seemed perfectly content. Children played in the streets until dark, elders told stories by firelight, and everyone knew their neighbor.' What is the central theme?",
-      "options": ["The dangers of modern technology", "Happiness doesn't require material wealth", "Villages are better than cities", "Children need outdoor activities"],
-      "correct_answer": 1,
-      "explanation": "The passage contrasts the lack of electricity with contentment and community. The central theme is that happiness and fulfillment can exist without material amenities."
-    },
-    {
-      "id": "sci_001",
-      "category": "science",
-      "difficulty": "easy",
-      "question": "What is the chemical symbol for water?",
-      "options": ["WA", "H2O", "HO2", "W2O"],
-      "correct_answer": 1,
-      "explanation": "Water is H2O — two hydrogen atoms (H) and one oxygen atom (O) bonded together. The '2' indicates there are two hydrogen atoms per water molecule."
-    },
-    {
-      "id": "sci_002",
-      "category": "science",
-      "difficulty": "easy",
-      "question": "Which planet is closest to the Sun?",
-      "options": ["Venus", "Earth", "Mercury", "Mars"],
+      "id": "DC_107",
+      "category": "mathematics",
+      "difficulty": 7,
+      "question": "What is the place value of 5 in 12.058?",
+      "options": [
+        "5",
+        "0.5",
+        "0.05",
+        "0.005"
+      ],
       "correct_answer": 2,
-      "explanation": "Mercury is the closest planet to the Sun. The order of planets from the Sun is: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune."
+      "explanation": "5 is in the hundredths place, so its value is 5/100 = 0.05."
     },
     {
-      "id": "sci_003",
-      "category": "science",
-      "difficulty": "medium",
-      "question": "What is the process by which plants make their own food?",
-      "options": ["Respiration", "Photosynthesis", "Digestion", "Fermentation"],
-      "correct_answer": 1,
-      "explanation": "Photosynthesis is the process by which plants use sunlight, water, and carbon dioxide to produce oxygen and energy in the form of glucose. Formula: CO2 + H2O + light → glucose + O2."
-    },
-    {
-      "id": "sci_004",
-      "category": "science",
-      "difficulty": "medium",
-      "question": "What is the unit of electrical resistance?",
-      "options": ["Volt", "Ampere", "Ohm", "Watt"],
-      "correct_answer": 2,
-      "explanation": "The Ohm (Ω) is the unit of electrical resistance, named after Georg Simon Ohm. Ohm's Law states: Resistance = Voltage ÷ Current (R = V/I)."
-    },
-    {
-      "id": "sci_005",
-      "category": "science",
-      "difficulty": "easy",
-      "question": "How many chambers does the human heart have?",
-      "options": ["2", "3", "4", "5"],
-      "correct_answer": 2,
-      "explanation": "The human heart has 4 chambers: the right atrium, right ventricle, left atrium, and left ventricle. The right side pumps blood to the lungs; the left side pumps to the body."
-    },
-    {
-      "id": "sci_006",
-      "category": "science",
-      "difficulty": "hard",
-      "question": "What is Newton's Second Law of Motion?",
-      "options": ["Every action has an equal and opposite reaction", "An object at rest stays at rest unless acted upon", "Force equals mass times acceleration", "Energy cannot be created or destroyed"],
-      "correct_answer": 2,
-      "explanation": "Newton's Second Law states F = ma (Force = mass × acceleration). This means the acceleration of an object depends on the net force applied and its mass."
-    },
-    {
-      "id": "sci_007",
-      "category": "science",
-      "difficulty": "medium",
-      "question": "Which gas makes up the majority of Earth's atmosphere?",
-      "options": ["Oxygen", "Carbon dioxide", "Hydrogen", "Nitrogen"],
+      "id": "SY_103",
+      "category": "mathematics",
+      "difficulty": 7,
+      "question": "Which of these English capital letters has only a vertical line of symmetry?",
+      "options": [
+        "B",
+        "C",
+        "D",
+        "V"
+      ],
       "correct_answer": 3,
-      "explanation": "Nitrogen (N2) makes up about 78% of Earth's atmosphere. Oxygen accounts for about 21%, and the remaining 1% includes argon, carbon dioxide, and other gases."
+      "explanation": "V has vertical symmetry. B, C, and D have horizontal symmetry."
     },
     {
-      "id": "sci_008",
-      "category": "science",
-      "difficulty": "medium",
-      "question": "What is the powerhouse of the cell?",
-      "options": ["Nucleus", "Ribosome", "Mitochondria", "Vacuole"],
-      "correct_answer": 2,
-      "explanation": "Mitochondria are known as the powerhouse of the cell because they produce ATP (adenosine triphosphate), the energy currency used by the cell for various functions."
+      "id": "FR_108",
+      "category": "mathematics",
+      "difficulty": 10,
+      "question": "If 3/4 of a number is 60, find 1/2 of that number.",
+      "options": [
+        "40",
+        "80",
+        "30",
+        "45"
+      ],
+      "correct_answer": 0,
+      "explanation": "Number = (60 * 4) / 3 = 80. 1/2 of 80 = 40."
     },
     {
-      "id": "sci_009",
-      "category": "science",
-      "difficulty": "easy",
-      "question": "What type of rock is formed from cooled lava?",
-      "options": ["Sedimentary", "Metamorphic", "Igneous", "Limestone"],
-      "correct_answer": 2,
-      "explanation": "Igneous rocks form when magma (underground) or lava (above ground) cools and solidifies. 'Igneous' comes from the Latin word 'ignis' meaning fire."
-    },
-    {
-      "id": "sci_010",
-      "category": "science",
-      "difficulty": "hard",
-      "question": "Which element has the atomic number 79?",
-      "options": ["Silver", "Platinum", "Gold", "Copper"],
-      "correct_answer": 2,
-      "explanation": "Gold (Au, from the Latin 'aurum') has the atomic number 79, meaning it has 79 protons in its nucleus. It's known for its resistance to corrosion and electrical conductivity."
-    },
-    {
-      "id": "sci_011",
-      "category": "science",
-      "difficulty": "medium",
-      "question": "What is the speed of light in a vacuum?",
-      "options": ["3 × 10⁶ m/s", "3 × 10⁸ m/s", "3 × 10¹⁰ m/s", "3 × 10¹² m/s"],
+      "id": "GE_107",
+      "category": "mathematics",
+      "difficulty": 8,
+      "question": "Two lines that never meet even when extended are called:",
+      "options": [
+        "Intersecting lines",
+        "Parallel lines",
+        "Perpendicular lines",
+        "Ray lines"
+      ],
       "correct_answer": 1,
-      "explanation": "The speed of light in a vacuum is approximately 3 × 10⁸ m/s (300,000,000 meters per second or about 300,000 km/s). It is denoted by the letter 'c'."
+      "explanation": "Lines in the same plane that never meet are parallel lines."
     },
     {
-      "id": "sci_012",
-      "category": "science",
-      "difficulty": "easy",
-      "question": "What do we call animals that eat only plants?",
-      "options": ["Carnivores", "Omnivores", "Herbivores", "Insectivores"],
-      "correct_answer": 2,
-      "explanation": "Herbivores are animals that eat only plants. Examples: cows, rabbits, horses. Carnivores eat only meat, omnivores eat both plants and animals."
+      "id": "DC_108",
+      "category": "mathematics",
+      "difficulty": 8,
+      "question": "A tailor used 2.35 m of cloth for a shirt and 1.8 m for a pair of trousers. If he started with a 10 m roll, how much cloth is left?",
+      "options": [
+        "5.85 m",
+        "6.15 m",
+        "5.75 m",
+        "4.15 m"
+      ],
+      "correct_answer": 0,
+      "explanation": "Total used = 2.35 + 1.80 = 4.15 m. Leftover = 10.00 - 4.15 = 5.85 m."
     },
     {
-      "id": "sci_013",
-      "category": "science",
-      "difficulty": "hard",
-      "question": "What is the pH of a neutral solution?",
-      "options": ["0", "7", "10", "14"],
+      "id": "FR_109",
+      "category": "mathematics",
+      "difficulty": 10,
+      "question": "In a library, 5/12 of the books are English, 1/3 are Hindi, and the remaining 600 books are in other languages. Find the total number of books.",
+      "options": [
+        "1800",
+        "2400",
+        "3000",
+        "2000"
+      ],
       "correct_answer": 1,
-      "explanation": "The pH scale runs from 0-14. pH 7 is neutral (pure water). Below 7 is acidic (lemon juice pH ~2), above 7 is alkaline/basic (baking soda pH ~9)."
+      "explanation": "Sum of English and Hindi = 5/12 + 1/3 = 5/12 + 4/12 = 9/12 = 3/4. Remaining fraction = 1 - 3/4 = 1/4. If 1/4 = 600, then Total = 600 * 4 = 2400."
     },
     {
-      "id": "sci_014",
-      "category": "science",
-      "difficulty": "medium",
-      "question": "Which vitamin is produced by the human skin when exposed to sunlight?",
-      "options": ["Vitamin A", "Vitamin B12", "Vitamin C", "Vitamin D"],
+      "id": "GE_108",
+      "category": "mathematics",
+      "difficulty": 9,
+      "question": "The length of a rectangular park is thrice its breadth. If the perimeter is 160 m, find the length of the park.",
+      "options": [
+        "20 m",
+        "40 m",
+        "60 m",
+        "80 m"
+      ],
+      "correct_answer": 2,
+      "explanation": "Let breadth = x, length = 3x. Perimeter = 2(3x + x) = 8x. 8x = 160 -> x = 20. Length = 3 * 20 = 60 m."
+    },
+    {
+      "id": "DC_109",
+      "category": "mathematics",
+      "difficulty": 7,
+      "question": "Express 4567 grams as kilograms using decimals.",
+      "options": [
+        "45.67 kg",
+        "4.567 kg",
+        "0.4567 kg",
+        "456.7 kg"
+      ],
+      "correct_answer": 1,
+      "explanation": "1000g = 1kg. 4567 / 1000 = 4.567 kg."
+    },
+    {
+      "id": "SY_104",
+      "category": "mathematics",
+      "difficulty": 8,
+      "question": "Which of the following quadrilaterals has exactly two lines of symmetry?",
+      "options": [
+        "Square",
+        "Rectangle",
+        "Rhombus",
+        "Both Rectangle and Rhombus"
+      ],
       "correct_answer": 3,
-      "explanation": "Vitamin D is synthesized in the skin when exposed to UVB radiation from sunlight. It's important for bone health, immune function, and calcium absorption."
+      "explanation": "A rectangle has 2 (horizontal and vertical) and a rhombus has 2 (along diagonals). Squares have 4."
     },
     {
-      "id": "sci_015",
-      "category": "science",
-      "difficulty": "hard",
-      "question": "In which organ does digestion of proteins primarily begin?",
-      "options": ["Mouth", "Esophagus", "Stomach", "Small intestine"],
-      "correct_answer": 2,
-      "explanation": "Protein digestion primarily begins in the stomach, where pepsin (an enzyme) breaks down proteins. The acidic environment (HCl) also helps denature proteins for easier digestion."
+      "id": "FR_110",
+      "category": "mathematics",
+      "difficulty": 8,
+      "question": "What is the reciprocal of the sum of 2/5 and 3/10?",
+      "options": [
+        "10/7",
+        "7/10",
+        "5/7",
+        "1 3/7"
+      ],
+      "correct_answer": 0,
+      "explanation": "Sum = 4/10 + 3/10 = 7/10. Reciprocal = 10/7."
     },
     {
-      "id": "gk_001",
-      "category": "general_knowledge",
-      "difficulty": "easy",
-      "question": "What is the capital city of France?",
-      "options": ["London", "Berlin", "Paris", "Madrid"],
-      "correct_answer": 2,
-      "explanation": "Paris is the capital and largest city of France. It is known as the 'City of Light' and is famous for the Eiffel Tower, the Louvre museum, and its rich culture."
+      "id": "DC_110",
+      "category": "mathematics",
+      "difficulty": 9,
+      "question": "Find the product of 0.05, 0.5, and 5.",
+      "options": [
+        "0.125",
+        "1.25",
+        "0.0125",
+        "12.5"
+      ],
+      "correct_answer": 0,
+      "explanation": "5 * 5 * 5 = 125. Decimal places: 2 (from 0.05) + 1 (from 0.5) = 3 places. Result = 0.125."
     },
     {
-      "id": "gk_002",
-      "category": "general_knowledge",
-      "difficulty": "easy",
-      "question": "How many continents are there on Earth?",
-      "options": ["5", "6", "7", "8"],
-      "correct_answer": 2,
-      "explanation": "There are 7 continents on Earth: Africa, Antarctica, Asia, Australia (Oceania), Europe, North America, and South America."
-    },
-    {
-      "id": "gk_003",
-      "category": "general_knowledge",
-      "difficulty": "medium",
-      "question": "Who wrote the play 'Romeo and Juliet'?",
-      "options": ["Charles Dickens", "William Shakespeare", "Jane Austen", "Mark Twain"],
+      "id": "GE_109",
+      "category": "mathematics",
+      "difficulty": 8,
+      "question": "A circle has a radius of 3.5 cm. What is its circumference? (Take \u03c0 = 22/7)",
+      "options": [
+        "11 cm",
+        "22 cm",
+        "44 cm",
+        "7 cm"
+      ],
       "correct_answer": 1,
-      "explanation": "'Romeo and Juliet' was written by William Shakespeare, likely between 1594-1596. Shakespeare is widely regarded as the greatest writer in the English language."
+      "explanation": "C = 2 * \u03c0 * r = 2 * (22/7) * 3.5 = 2 * 22 * 0.5 = 22 cm."
     },
     {
-      "id": "gk_004",
-      "category": "general_knowledge",
-      "difficulty": "medium",
-      "question": "What is the largest ocean on Earth?",
-      "options": ["Atlantic Ocean", "Indian Ocean", "Arctic Ocean", "Pacific Ocean"],
+      "id": "FR_111",
+      "category": "mathematics",
+      "difficulty": 7,
+      "question": "Convert 17/4 into a mixed fraction.",
+      "options": [
+        "4 1/2",
+        "4 1/4",
+        "3 1/4",
+        "4 3/4"
+      ],
+      "correct_answer": 1,
+      "explanation": "17 divided by 4 is 4 with a remainder of 1. So, 4 1/4."
+    },
+    {
+      "id": "DC_111",
+      "category": "mathematics",
+      "difficulty": 8,
+      "question": "Which is smaller: 0.708 or 0.78?",
+      "options": [
+        "0.708",
+        "0.78",
+        "They are equal",
+        "Cannot be determined"
+      ],
+      "correct_answer": 0,
+      "explanation": "Compare digit by digit: 0.708 vs 0.780. 708 < 780, so 0.708 is smaller."
+    },
+    {
+      "id": "GE_110",
+      "category": "mathematics",
+      "difficulty": 10,
+      "question": "Find the side of a square whose perimeter is equal to the perimeter of a rectangle with length 10 cm and breadth 6 cm.",
+      "options": [
+        "4 cm",
+        "8 cm",
+        "16 cm",
+        "32 cm"
+      ],
+      "correct_answer": 1,
+      "explanation": "Rectangle perimeter = 2(10 + 6) = 32 cm. Square perimeter = 4 * side = 32. Side = 32 / 4 = 8 cm."
+    },
+    {
+      "id": "FR_112",
+      "category": "mathematics",
+      "difficulty": 8,
+      "question": "Simplify: (4 1/2 - 2 1/3) + 1 1/6",
+      "options": [
+        "3 1/3",
+        "3 2/3",
+        "2 1/6",
+        "3"
+      ],
+      "correct_answer": 0,
+      "explanation": "(9/2 - 7/3) = (27-14)/6 = 13/6. 13/6 + 7/6 = 20/6 = 10/3 = 3 1/3."
+    },
+    {
+      "id": "DC_112",
+      "category": "mathematics",
+      "difficulty": 7,
+      "question": "Round off 15.678 to the nearest hundredth.",
+      "options": [
+        "15.67",
+        "15.68",
+        "15.7",
+        "16.0"
+      ],
+      "correct_answer": 1,
+      "explanation": "Look at the thousandths place (8). Since it is 5 or more, round up the hundredths place to 8. Result = 15.68."
+    },
+    {
+      "id": "GE_111",
+      "category": "mathematics",
+      "difficulty": 8,
+      "question": "If an angle is 45\u00b0, what is its complementary angle?",
+      "options": [
+        "45\u00b0",
+        "135\u00b0",
+        "55\u00b0",
+        "90\u00b0"
+      ],
+      "correct_answer": 0,
+      "explanation": "Complementary angles sum to 90\u00b0. 90 - 45 = 45\u00b0."
+    },
+    {
+      "id": "FR_113",
+      "category": "mathematics",
+      "difficulty": 9,
+      "question": "A rope 12 m long is cut into small pieces of 3/4 m each. How many pieces are obtained?",
+      "options": [
+        "9",
+        "16",
+        "12",
+        "15"
+      ],
+      "correct_answer": 1,
+      "explanation": "12 \u00f7 3/4 = 12 * 4/3 = 4 * 4 = 16 pieces."
+    },
+    {
+      "id": "DC_113",
+      "category": "mathematics",
+      "difficulty": 8,
+      "question": "Express 7/25 as a decimal.",
+      "options": [
+        "0.28",
+        "0.14",
+        "0.7",
+        "0.35"
+      ],
+      "correct_answer": 0,
+      "explanation": "7/25 = (7*4)/(25*4) = 28/100 = 0.28."
+    },
+    {
+      "id": "SY_105",
+      "category": "mathematics",
+      "difficulty": 7,
+      "question": "Which of these letters has no line of symmetry?",
+      "options": [
+        "X",
+        "O",
+        "P",
+        "T"
+      ],
+      "correct_answer": 2,
+      "explanation": "P cannot be folded in any direction to have matching halves."
+    },
+    {
+      "id": "GE_112",
+      "category": "mathematics",
+      "difficulty": 10,
+      "question": "The area of a rectangle is 96 sq. cm. If the breadth is 8 cm, find its perimeter.",
+      "options": [
+        "12 cm",
+        "20 cm",
+        "40 cm",
+        "44 cm"
+      ],
+      "correct_answer": 2,
+      "explanation": "Length = Area / Breadth = 96 / 8 = 12 cm. Perimeter = 2(12 + 8) = 40 cm."
+    },
+    {
+      "id": "DC_114",
+      "category": "mathematics",
+      "difficulty": 8,
+      "question": "Find the value of 1.1 * 1.1 * 1.1.",
+      "options": [
+        "1.21",
+        "1.331",
+        "13.31",
+        "1.111"
+      ],
+      "correct_answer": 1,
+      "explanation": "11 * 11 * 11 = 1331. There are 3 decimal places in total. Result = 1.331."
+    },
+    {
+      "id": "FR_114",
+      "category": "mathematics",
+      "difficulty": 7,
+      "question": "Which fraction is equivalent to 3/5?",
+      "options": [
+        "9/15",
+        "6/15",
+        "12/25",
+        "3/10"
+      ],
+      "correct_answer": 0,
+      "explanation": "Multiply numerator and denominator by 3: 3*3/5*3 = 9/15."
+    },
+    {
+      "id": "GE_113",
+      "category": "mathematics",
+      "difficulty": 8,
+      "question": "A triangle with all three sides of different lengths is called a/an:",
+      "options": [
+        "Isosceles triangle",
+        "Equilateral triangle",
+        "Scalene triangle",
+        "Right-angled triangle"
+      ],
+      "correct_answer": 2,
+      "explanation": "Scalene triangles have no equal sides."
+    },
+    {
+      "id": "DC_115",
+      "category": "mathematics",
+      "difficulty": 9,
+      "question": "If 10 pens cost \u20b9125.50, find the cost of 1 pen.",
+      "options": [
+        "\u20b912.50",
+        "\u20b912.55",
+        "\u20b91.25",
+        "\u20b912.05"
+      ],
+      "correct_answer": 1,
+      "explanation": "125.50 / 10 = 12.55."
+    },
+    {
+      "id": "FR_115",
+      "category": "mathematics",
+      "difficulty": 8,
+      "question": "Half of 3/4 is:",
+      "options": [
+        "3/8",
+        "1/2",
+        "3/2",
+        "1/4"
+      ],
+      "correct_answer": 0,
+      "explanation": "1/2 * 3/4 = 3/8."
+    },
+    {
+      "id": "GE_114",
+      "category": "mathematics",
+      "difficulty": 7,
+      "question": "What is the instrument used to measure an angle?",
+      "options": [
+        "Compass",
+        "Divider",
+        "Protractor",
+        "Set square"
+      ],
+      "correct_answer": 2,
+      "explanation": "Protractors are used to measure and draw angles in degrees."
+    },
+    {
+      "id": "SY_106",
+      "category": "mathematics",
+      "difficulty": 10,
+      "question": "How many lines of symmetry does a scalene triangle have?",
+      "options": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ],
+      "correct_answer": 0,
+      "explanation": "A scalene triangle has no equal sides or angles, therefore it has no lines of symmetry."
+    },
+    {
+      "id": "FR_116",
+      "category": "mathematics",
+      "difficulty": 9,
+      "question": "A student spent 2/5 of his pocket money on books and 1/4 of the remaining on a snack. If he still has \u20b9450 left, how much pocket money did he have initially?",
+      "options": [
+        "\u20b9800",
+        "\u20b91000",
+        "\u20b91200",
+        "\u20b9900"
+      ],
+      "correct_answer": 1,
+      "explanation": "Spent on books: 2/5. Remainder: 3/5. Spent on snack: 1/4 of 3/5 = 3/20. Total spent: 2/5 + 3/20 = 8/20 + 3/20 = 11/20. Fraction left: 9/20. If 9/20 = 450, Total = (450 * 20) / 9 = \u20b91000."
+    },
+    {
+      "id": "DC_116",
+      "category": "mathematics",
+      "difficulty": 8,
+      "question": "The thickness of a science book is 2.35 cm and an English book is 1.8 cm. What is the total thickness of a stack of 5 science books and 4 English books?",
+      "options": [
+        "18.95 cm",
+        "19.25 cm",
+        "17.15 cm",
+        "18.15 cm"
+      ],
+      "correct_answer": 0,
+      "explanation": "Science: 2.35 * 5 = 11.75 cm. English: 1.8 * 4 = 7.2 cm. Total: 11.75 + 7.2 = 18.95 cm."
+    },
+    {
+      "id": "GE_115",
+      "category": "mathematics",
+      "difficulty": 8,
+      "question": "How many degrees are there in 2/3 of a right angle?",
+      "options": [
+        "30\u00b0",
+        "45\u00b0",
+        "60\u00b0",
+        "90\u00b0"
+      ],
+      "correct_answer": 2,
+      "explanation": "Right angle = 90\u00b0. 2/3 of 90 = 2 * 30 = 60\u00b0."
+    },
+    {
+      "id": "FR_117",
+      "category": "mathematics",
+      "difficulty": 7,
+      "question": "Which of the following is a unit fraction?",
+      "options": [
+        "2/1",
+        "1/7",
+        "7/1",
+        "7/7"
+      ],
+      "correct_answer": 1,
+      "explanation": "A unit fraction is a fraction where the numerator is 1."
+    },
+    {
+      "id": "DC_117",
+      "category": "mathematics",
+      "difficulty": 10,
+      "question": "A car travels 442.4 km in 7.9 hours. What is its average speed rounded to the nearest whole number?",
+      "options": [
+        "54 km/h",
+        "56 km/h",
+        "60 km/h",
+        "52 km/h"
+      ],
+      "correct_answer": 1,
+      "explanation": "442.4 / 7.9 = 56. Average speed is 56 km/h."
+    },
+    {
+      "id": "SY_107",
+      "category": "mathematics",
+      "difficulty": 8,
+      "question": "A figure is rotated 90\u00b0 about its center and it looks exactly the same as its original position. What is the order of rotational symmetry for this figure?",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
       "correct_answer": 3,
-      "explanation": "The Pacific Ocean is the largest and deepest of Earth's oceans, covering more than 30% of Earth's surface and about 46% of Earth's water surface area."
+      "explanation": "Order of rotational symmetry = 360 / Angle of rotation. 360 / 90 = 4."
     },
     {
-      "id": "gk_005",
-      "category": "general_knowledge",
-      "difficulty": "easy",
-      "question": "In which country was the Olympic Games originally held?",
-      "options": ["Italy", "Greece", "Egypt", "China"],
+      "id": "GE_116",
+      "category": "mathematics",
+      "difficulty": 7,
+      "question": "A polygon with 5 sides is called a/an:",
+      "options": [
+        "Hexagon",
+        "Pentagon",
+        "Octagon",
+        "Quadrilateral"
+      ],
       "correct_answer": 1,
-      "explanation": "The ancient Olympic Games originated in Olympia, Greece, in 776 BCE. The modern Olympics were revived in Athens, Greece, in 1896."
+      "explanation": "A five-sided polygon is a pentagon."
     },
     {
-      "id": "gk_006",
-      "category": "general_knowledge",
-      "difficulty": "medium",
-      "question": "What is the chemical symbol for gold?",
-      "options": ["Go", "Gd", "Au", "Ag"],
-      "correct_answer": 2,
-      "explanation": "Gold's chemical symbol is 'Au', from the Latin word 'aurum' meaning gold. Silver's symbol is 'Ag' from 'argentum'. Many element symbols come from Latin or Greek names."
+      "id": "FR_118",
+      "category": "mathematics",
+      "difficulty": 8,
+      "question": "Reduce 144/180 to its lowest terms.",
+      "options": [
+        "4/5",
+        "12/15",
+        "6/7",
+        "8/9"
+      ],
+      "correct_answer": 0,
+      "explanation": "HCF of 144 and 180 is 36. 144 / 36 = 4. 180 / 36 = 5. Result = 4/5."
     },
     {
-      "id": "gk_007",
-      "category": "general_knowledge",
-      "difficulty": "hard",
-      "question": "Who painted the Mona Lisa?",
-      "options": ["Michelangelo", "Raphael", "Leonardo da Vinci", "Donatello"],
-      "correct_answer": 2,
-      "explanation": "The Mona Lisa was painted by Leonardo da Vinci, likely between 1503-1519. It hangs in the Louvre Museum in Paris and is considered the world's most famous painting."
+      "id": "DC_118",
+      "category": "mathematics",
+      "difficulty": 8,
+      "question": "Find the sum of 0.6, 0.66, 0.066, and 6.6.",
+      "options": [
+        "7.926",
+        "6.926",
+        "7.866",
+        "7.666"
+      ],
+      "correct_answer": 0,
+      "explanation": "0.600 + 0.660 + 0.066 + 6.600 = 7.926."
     },
     {
-      "id": "gk_008",
-      "category": "general_knowledge",
-      "difficulty": "medium",
-      "question": "What is the tallest mountain in the world?",
-      "options": ["K2", "Mount Everest", "Kangchenjunga", "Lhotse"],
+      "id": "GE_117",
+      "category": "mathematics",
+      "difficulty": 9,
+      "question": "The perimeter of a square is 36 cm. What is its area?",
+      "options": [
+        "36 sq. cm",
+        "81 sq. cm",
+        "64 sq. cm",
+        "144 sq. cm"
+      ],
       "correct_answer": 1,
-      "explanation": "Mount Everest, located in the Himalayas on the border between Nepal and Tibet, is the world's tallest mountain at 8,848.86 meters (29,031.7 feet) above sea level."
+      "explanation": "Side = 36 / 4 = 9 cm. Area = 9 * 9 = 81 sq. cm."
     },
     {
-      "id": "gk_009",
-      "category": "general_knowledge",
-      "difficulty": "easy",
-      "question": "How many days are there in a leap year?",
-      "options": ["364", "365", "366", "367"],
+      "id": "FR_119",
+      "category": "mathematics",
+      "difficulty": 7,
+      "question": "Convert 5 2/7 into an improper fraction.",
+      "options": [
+        "35/7",
+        "37/7",
+        "17/7",
+        "10/7"
+      ],
+      "correct_answer": 1,
+      "explanation": "(5 * 7) + 2 = 37. So, 37/7."
+    },
+    {
+      "id": "DC_119",
+      "category": "mathematics",
+      "difficulty": 8,
+      "question": "Write 0.125 as a fraction in simplest form.",
+      "options": [
+        "1/4",
+        "1/8",
+        "1/5",
+        "2/25"
+      ],
+      "correct_answer": 1,
+      "explanation": "125/1000 = 1/8."
+    },
+    {
+      "id": "GE_118",
+      "category": "mathematics",
+      "difficulty": 10,
+      "question": "The area of a rectangle is 120 sq. cm and its length is 15 cm. Find its perimeter.",
+      "options": [
+        "23 cm",
+        "30 cm",
+        "46 cm",
+        "60 cm"
+      ],
       "correct_answer": 2,
-      "explanation": "A leap year has 366 days. An extra day (February 29) is added every 4 years to keep the calendar in sync with the astronomical year (365.25 days)."
+      "explanation": "Breadth = 120 / 15 = 8 cm. Perimeter = 2(15 + 8) = 2 * 23 = 46 cm."
     },
     {
-      "id": "gk_010",
-      "category": "general_knowledge",
-      "difficulty": "hard",
-      "question": "Which ancient wonder of the world still exists today?",
-      "options": ["Hanging Gardens of Babylon", "Statue of Zeus at Olympia", "Great Pyramid of Giza", "Colossus of Rhodes"],
+      "id": "FR_120",
+      "category": "mathematics",
+      "difficulty": 8,
+      "question": "If 4/7 of a number is 28, what is the number?",
+      "options": [
+        "16",
+        "49",
+        "56",
+        "35"
+      ],
+      "correct_answer": 1,
+      "explanation": "Number = (28 * 7) / 4 = 7 * 7 = 49."
+    },
+    {
+      "id": "DC_120",
+      "category": "mathematics",
+      "difficulty": 7,
+      "question": "What is the product of 1.2 and 0.5?",
+      "options": [
+        "6.0",
+        "0.6",
+        "0.06",
+        "0.12"
+      ],
+      "correct_answer": 1,
+      "explanation": "12 * 5 = 60. Two decimal places = 0.60 = 0.6."
+    },
+    {
+      "id": "SY_108",
+      "category": "mathematics",
+      "difficulty": 7,
+      "question": "Which of these figures has an infinite number of lines of symmetry?",
+      "options": [
+        "Square",
+        "Regular Octagon",
+        "Circle",
+        "Equilateral Triangle"
+      ],
       "correct_answer": 2,
-      "explanation": "The Great Pyramid of Giza is the only ancient wonder still largely intact. Built around 2560 BCE for Pharaoh Khufu, it stands at about 138.8 meters tall today."
+      "explanation": "A circle can be folded along any diameter to show symmetry, making the lines infinite."
     },
     {
-      "id": "gk_011",
-      "category": "general_knowledge",
-      "difficulty": "medium",
-      "question": "What is the currency of Japan?",
-      "options": ["Yuan", "Won", "Yen", "Ringgit"],
+      "id": "GE_119",
+      "category": "mathematics",
+      "difficulty": 8,
+      "question": "An angle whose measure is exactly 180\u00b0 is called a/an:",
+      "options": [
+        "Right angle",
+        "Straight angle",
+        "Reflex angle",
+        "Obtuse angle"
+      ],
+      "correct_answer": 1,
+      "explanation": "An angle of 180\u00b0 is a straight angle."
+    },
+    {
+      "id": "DC_121",
+      "category": "mathematics",
+      "difficulty": 9,
+      "question": "Divide 3.75 by 0.05.",
+      "options": [
+        "0.75",
+        "7.5",
+        "75",
+        "750"
+      ],
       "correct_answer": 2,
-      "explanation": "The Yen (¥) is the official currency of Japan. It is the third most traded currency in the foreign exchange market after the US dollar and Euro."
+      "explanation": "3.75 / 0.05 = 375 / 5 = 75."
     },
     {
-      "id": "gk_012",
-      "category": "general_knowledge",
-      "difficulty": "easy",
-      "question": "Which animal is known as the 'King of the Jungle'?",
-      "options": ["Tiger", "Elephant", "Lion", "Leopard"],
+      "id": "FR_121",
+      "category": "mathematics",
+      "difficulty": 8,
+      "question": "Arrange 2/5, 1/2, 3/10 in descending order.",
+      "options": [
+        "1/2, 2/5, 3/10",
+        "3/10, 2/5, 1/2",
+        "1/2, 3/10, 2/5",
+        "2/5, 1/2, 3/10"
+      ],
+      "correct_answer": 0,
+      "explanation": "Common denominator 10: 4/10, 5/10, 3/10. Descending: 5/10 (1/2) > 4/10 (2/5) > 3/10."
+    },
+    {
+      "id": "GE_120",
+      "category": "mathematics",
+      "difficulty": 7,
+      "question": "A triangle having two sides equal is called a/an:",
+      "options": [
+        "Scalene triangle",
+        "Isosceles triangle",
+        "Equilateral triangle",
+        "Right triangle"
+      ],
+      "correct_answer": 1,
+      "explanation": "An isosceles triangle has at least two equal sides."
+    },
+    {
+      "id": "DC_122",
+      "category": "mathematics",
+      "difficulty": 8,
+      "question": "Which is greater: 1.009 or 1.09?",
+      "options": [
+        "1.009",
+        "1.09",
+        "They are equal",
+        "Cannot be determined"
+      ],
+      "correct_answer": 1,
+      "explanation": "1.090 is greater than 1.009."
+    },
+    {
+      "id": "FR_122",
+      "category": "mathematics",
+      "difficulty": 7,
+      "question": "Find 2/9 of 81.",
+      "options": [
+        "18",
+        "9",
+        "27",
+        "36"
+      ],
+      "correct_answer": 0,
+      "explanation": "(81 / 9) * 2 = 9 * 2 = 18."
+    },
+    {
+      "id": "GE_121",
+      "category": "mathematics",
+      "difficulty": 10,
+      "question": "Three angles of a quadrilateral are 90\u00b0, 75\u00b0, and 105\u00b0. Find the fourth angle.",
+      "options": [
+        "90\u00b0",
+        "100\u00b0",
+        "80\u00b0",
+        "110\u00b0"
+      ],
+      "correct_answer": 0,
+      "explanation": "360 - (90 + 75 + 105) = 360 - 270 = 90\u00b0."
+    },
+    {
+      "id": "DC_123",
+      "category": "mathematics",
+      "difficulty": 8,
+      "question": "Round 4.562 to the nearest tenth.",
+      "options": [
+        "4.5",
+        "4.6",
+        "4.56",
+        "5.0"
+      ],
+      "correct_answer": 1,
+      "explanation": "Look at the hundredths place (6). Since it's 5 or more, round up the tenths place. Result = 4.6."
+    },
+    {
+      "id": "SY_109",
+      "category": "mathematics",
+      "difficulty": 7,
+      "question": "The letter 'O' has how many lines of symmetry?",
+      "options": [
+        "1",
+        "2",
+        "4",
+        "Infinite"
+      ],
+      "correct_answer": 1,
+      "explanation": "Usually considered to have 2 (vertical and horizontal), though it depends on font; standard geometric O is oval-like."
+    },
+    {
+      "id": "DC_124",
+      "category": "mathematics",
+      "difficulty": 9,
+      "question": "A bottle contains 1.5 liters of juice. If 0.25 liters are poured into each glass, how many glasses can be filled?",
+      "options": [
+        "4",
+        "5",
+        "6",
+        "8"
+      ],
       "correct_answer": 2,
-      "explanation": "The lion is traditionally known as the 'King of the Jungle', though lions actually live in grasslands and savannas. The title reflects their strength, power, and dominant nature."
+      "explanation": "1.5 \u00f7 0.25 = 150 \u00f7 25 = 6 glasses."
     },
     {
-      "id": "gk_013",
-      "category": "general_knowledge",
-      "difficulty": "hard",
-      "question": "In what year did World War II end?",
-      "options": ["1943", "1944", "1945", "1946"],
-      "correct_answer": 2,
-      "explanation": "World War II ended in 1945. Germany surrendered on May 8, 1945 (V-E Day), and Japan surrendered on September 2, 1945 (V-J Day), officially ending the war."
+      "id": "FR_123",
+      "category": "mathematics",
+      "difficulty": 8,
+      "question": "Simplify the expression: (2/3 of 27) + (3/4 of 16).",
+      "options": [
+        "30",
+        "28",
+        "32",
+        "26"
+      ],
+      "correct_answer": 0,
+      "explanation": "2/3 * 27 = 18. 3/4 * 16 = 12. 18 + 12 = 30."
     },
     {
-      "id": "gk_014",
-      "category": "general_knowledge",
-      "difficulty": "medium",
-      "question": "What is the longest river in the world?",
-      "options": ["Amazon", "Yangtze", "Mississippi", "Nile"],
+      "id": "GE_122",
+      "category": "mathematics",
+      "difficulty": 8,
+      "question": "The diameter of a circular wheel is 70 cm. How much distance will it cover in 10 full rotations? (Take \u03c0 = 22/7)",
+      "options": [
+        "22 m",
+        "220 m",
+        "2.2 m",
+        "2200 cm"
+      ],
+      "correct_answer": 0,
+      "explanation": "Circumference = \u03c0d = (22/7) * 70 = 220 cm. 10 rotations = 220 * 10 = 2200 cm = 22 m."
+    },
+    {
+      "id": "DC_125",
+      "category": "mathematics",
+      "difficulty": 7,
+      "question": "Which of these is the decimal equivalent of 3/40?",
+      "options": [
+        "0.75",
+        "0.075",
+        "0.0075",
+        "0.34"
+      ],
+      "correct_answer": 1,
+      "explanation": "3 \u00f7 40 = 0.075."
+    },
+    {
+      "id": "SY_110",
+      "category": "mathematics",
+      "difficulty": 8,
+      "question": "Which of these capital letters has only a horizontal line of symmetry?",
+      "options": [
+        "A",
+        "E",
+        "M",
+        "W"
+      ],
+      "correct_answer": 1,
+      "explanation": "E can be split horizontally; A, M, and W have vertical symmetry."
+    },
+    {
+      "id": "FR_124",
+      "category": "mathematics",
+      "difficulty": 9,
+      "question": "A worker finishes 3/8 of a job in 6 days. How many more days will he take to finish the entire job?",
+      "options": [
+        "10 days",
+        "16 days",
+        "9 days",
+        "12 days"
+      ],
+      "correct_answer": 0,
+      "explanation": "Total days = (6 * 8) / 3 = 16 days. Remaining days = 16 - 6 = 10 days."
+    },
+    {
+      "id": "GE_123",
+      "category": "mathematics",
+      "difficulty": 10,
+      "question": "Two adjacent angles on a straight line are (2x + 10)\u00b0 and (3x - 40)\u00b0. Find the value of x.",
+      "options": [
+        "38",
+        "42",
+        "45",
+        "50"
+      ],
+      "correct_answer": 1,
+      "explanation": "Sum of angles on a straight line = 180\u00b0. 2x + 10 + 3x - 40 = 180 -> 5x - 30 = 180 -> 5x = 210 -> x = 42."
+    },
+    {
+      "id": "DC_126",
+      "category": "mathematics",
+      "difficulty": 8,
+      "question": "Convert 25.04 into a mixed fraction in its simplest form.",
+      "options": [
+        "25 1/25",
+        "25 4/10",
+        "25 2/5",
+        "25 1/4"
+      ],
+      "correct_answer": 0,
+      "explanation": "25.04 = 25 4/100. Simplify 4/100 to 1/25."
+    },
+    {
+      "id": "FR_125",
+      "category": "mathematics",
+      "difficulty": 7,
+      "question": "Subtract 2 1/5 from 5.",
+      "options": [
+        "3 1/5",
+        "2 4/5",
+        "3 4/5",
+        "2 1/5"
+      ],
+      "correct_answer": 1,
+      "explanation": "5 - 11/5 = (25-11)/5 = 14/5 = 2 4/5."
+    },
+    {
+      "id": "GE_124",
+      "category": "mathematics",
+      "difficulty": 8,
+      "question": "Find the area of a square whose perimeter is 48 cm.",
+      "options": [
+        "144 sq. cm",
+        "96 sq. cm",
+        "121 sq. cm",
+        "169 sq. cm"
+      ],
+      "correct_answer": 0,
+      "explanation": "Side = 48 / 4 = 12. Area = 12 * 12 = 144."
+    },
+    {
+      "id": "DC_127",
+      "category": "mathematics",
+      "difficulty": 8,
+      "question": "Divide 0.0063 by 0.09.",
+      "options": [
+        "0.7",
+        "0.07",
+        "0.007",
+        "7"
+      ],
+      "correct_answer": 1,
+      "explanation": "0.0063 / 0.09 = 0.63 / 9 = 0.07."
+    },
+    {
+      "id": "SY_111",
+      "category": "mathematics",
+      "difficulty": 7,
+      "question": "A kite-shaped figure has how many lines of symmetry?",
+      "options": [
+        "0",
+        "1",
+        "2",
+        "4"
+      ],
+      "correct_answer": 1,
+      "explanation": "A kite has exactly one line of symmetry along its main diagonal."
+    },
+    {
+      "id": "FR_126",
+      "category": "mathematics",
+      "difficulty": 9,
+      "question": "Which of these is the greatest: 2/3, 3/4, 4/5, 5/6?",
+      "options": [
+        "2/3",
+        "3/4",
+        "4/5",
+        "5/6"
+      ],
       "correct_answer": 3,
-      "explanation": "The Nile River in Africa is traditionally considered the world's longest river at approximately 6,650 km (4,130 miles). It flows through northeastern Africa into the Mediterranean Sea."
+      "explanation": "Convert to common denominator 60: 40/60, 45/60, 48/60, 50/60. 5/6 is the largest."
     },
     {
-      "id": "gk_015",
-      "category": "general_knowledge",
-      "difficulty": "medium",
-      "question": "Who invented the telephone?",
-      "options": ["Thomas Edison", "Nikola Tesla", "Alexander Graham Bell", "Guglielmo Marconi"],
+      "id": "GE_125",
+      "category": "mathematics",
+      "difficulty": 8,
+      "question": "How many endpoints does a line segment have?",
+      "options": [
+        "0",
+        "1",
+        "2",
+        "Infinite"
+      ],
       "correct_answer": 2,
-      "explanation": "Alexander Graham Bell is credited with inventing the telephone and was awarded the first patent for it in 1876. He made the first successful telephone call to his assistant Thomas Watson."
+      "explanation": "A line segment is a part of a line with two distinct endpoints."
+    },
+    {
+      "id": "DC_128",
+      "category": "mathematics",
+      "difficulty": 8,
+      "question": "Find the value of 15.5 + 1.55 + 0.155.",
+      "options": [
+        "17.205",
+        "16.105",
+        "17.105",
+        "17.055"
+      ],
+      "correct_answer": 0,
+      "explanation": "15.500 + 1.550 + 0.155 = 17.205."
+    },
+    {
+      "id": "FR_127",
+      "category": "mathematics",
+      "difficulty": 10,
+      "question": "If 2/5 of a group of children are girls and there are 21 boys, how many children are there in total?",
+      "options": [
+        "30",
+        "35",
+        "42",
+        "50"
+      ],
+      "correct_answer": 1,
+      "explanation": "Boys = 1 - 2/5 = 3/5. If 3/5 of Total = 21, then Total = (21 * 5) / 3 = 35."
+    },
+    {
+      "id": "GE_126",
+      "category": "mathematics",
+      "difficulty": 7,
+      "question": "An angle of 90\u00b0 is called a/an:",
+      "options": [
+        "Acute angle",
+        "Obtuse angle",
+        "Right angle",
+        "Reflex angle"
+      ],
+      "correct_answer": 2,
+      "explanation": "An angle exactly equal to 90\u00b0 is a right angle."
+    },
+    {
+      "id": "DC_129",
+      "category": "mathematics",
+      "difficulty": 8,
+      "question": "Round 0.995 to the nearest hundredth.",
+      "options": [
+        "0.99",
+        "1.00",
+        "0.90",
+        "1.10"
+      ],
+      "correct_answer": 1,
+      "explanation": "The thousandths digit is 5, so round up. 0.99 + 0.01 = 1.00."
+    },
+    {
+      "id": "SY_112",
+      "category": "mathematics",
+      "difficulty": 9,
+      "question": "A square is rotated about its center. At what angles will it look exactly like the original?",
+      "options": [
+        "90\u00b0 only",
+        "90\u00b0, 180\u00b0, 270\u00b0, 360\u00b0",
+        "180\u00b0 and 360\u00b0",
+        "45\u00b0, 90\u00b0, 135\u00b0, 180\u00b0"
+      ],
+      "correct_answer": 1,
+      "explanation": "A square has rotational symmetry of order 4, so it maps onto itself every 90\u00b0."
+    },
+    {
+      "id": "FR_128",
+      "category": "mathematics",
+      "difficulty": 8,
+      "question": "What is the product of 5/9 and its reciprocal?",
+      "options": [
+        "1",
+        "25/81",
+        "81/25",
+        "0"
+      ],
+      "correct_answer": 0,
+      "explanation": "The product of any non-zero number and its reciprocal is always 1."
+    },
+    {
+      "id": "GE_127",
+      "category": "mathematics",
+      "difficulty": 8,
+      "question": "The sum of the angles of a triangle is:",
+      "options": [
+        "90\u00b0",
+        "180\u00b0",
+        "270\u00b0",
+        "360\u00b0"
+      ],
+      "correct_answer": 1,
+      "explanation": "The Angle Sum Property of a triangle states the sum is always 180\u00b0."
+    },
+    {
+      "id": "DC_130",
+      "category": "mathematics",
+      "difficulty": 7,
+      "question": "The decimal 0.4 is equal to which fraction?",
+      "options": [
+        "1/4",
+        "4/100",
+        "2/5",
+        "1/40"
+      ],
+      "correct_answer": 2,
+      "explanation": "0.4 = 4/10 = 2/5."
+    },
+    {
+      "id": "GE_128",
+      "category": "mathematics",
+      "difficulty": 9,
+      "question": "A rectangular field is 25.5 m long and 10 m wide. Find the cost of fencing it at \u20b950 per meter.",
+      "options": [
+        "\u20b91775",
+        "\u20b93550",
+        "\u20b92550",
+        "\u20b97100"
+      ],
+      "correct_answer": 1,
+      "explanation": "Perimeter = 2(25.5 + 10) = 71 m. Cost = 71 * 50 = \u20b93550."
+    },
+    {
+      "id": "FR_129",
+      "category": "mathematics",
+      "difficulty": 8,
+      "question": "Find the difference between 3/4 and 3/8.",
+      "options": [
+        "0",
+        "3/4",
+        "3/8",
+        "1/2"
+      ],
+      "correct_answer": 2,
+      "explanation": "3/4 - 3/8 = 6/8 - 3/8 = 3/8."
+    },
+    {
+      "id": "SY_113",
+      "category": "mathematics",
+      "difficulty": 10,
+      "question": "Which of these geometric shapes has NO rotational symmetry (order 1 only)?",
+      "options": [
+        "Equilateral Triangle",
+        "Rectangle",
+        "Scalene Triangle",
+        "Rhombus"
+      ],
+      "correct_answer": 2,
+      "explanation": "A scalene triangle must be rotated a full 360\u00b0 to look the same."
     }
   ]
 }

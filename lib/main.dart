@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
 import 'services/question_service.dart';
+import 'services/storage_service.dart';
 import 'services/quiz_provider.dart';
 import 'theme/app_theme.dart';
 import 'screens/home_screen.dart';
@@ -15,19 +16,41 @@ void main() async {
     DeviceOrientation.portraitDown,
   ]);
 
-  // Load question bank
-  await QuestionService.loadQuestions();
+  final questionService = QuestionService();
+  final storageService = StorageService();
 
-  runApp(const QuizMasterApp());
+  // Load question bank
+  await questionService.loadQuestions();
+
+  runApp(QuizMasterApp(
+    questionService: questionService,
+    storageService: storageService,
+  ));
 }
 
 class QuizMasterApp extends StatelessWidget {
-  const QuizMasterApp({super.key});
+  final QuestionService questionService;
+  final StorageService storageService;
+
+  const QuizMasterApp({
+    super.key,
+    required this.questionService,
+    required this.storageService,
+  });
 
   @override
   Widget build(BuildContext context) {
-    return ChangeNotifierProvider(
-      create: (_) => QuizProvider(),
+    return MultiProvider(
+      providers: [
+        Provider<QuestionService>.value(value: questionService),
+        Provider<StorageService>.value(value: storageService),
+        ChangeNotifierProvider(
+          create: (_) => QuizProvider(
+            questionService: questionService,
+            storageService: storageService,
+          ),
+        ),
+      ],
       child: MaterialApp(
         title: 'Quiz Master',
         debugShowCheckedModeBanner: false,

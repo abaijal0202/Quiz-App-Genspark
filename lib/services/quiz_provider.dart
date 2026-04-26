@@ -5,10 +5,20 @@ import '../models/quiz_result_model.dart';
 import '../models/category_model.dart';
 import 'question_service.dart';
 import 'storage_service.dart';
+import '../constants/app_constants.dart';
 
 enum QuizState { idle, inProgress, paused, completed }
 
 class QuizProvider extends ChangeNotifier {
+  final QuestionService _questionService;
+  final StorageService _storageService;
+
+  QuizProvider({
+    required QuestionService questionService,
+    required StorageService storageService,
+  })  : _questionService = questionService,
+        _storageService = storageService;
+
   QuizState _state = QuizState.idle;
   List<Question> _questions = [];
   int _currentIndex = 0;
@@ -16,7 +26,7 @@ class QuizProvider extends ChangeNotifier {
   bool _answerSubmitted = false;
   List<AnsweredQuestion> _answeredQuestions = [];
   CategoryModel? _selectedCategory;
-  int _timeRemaining = 30;
+  int _timeRemaining = AppConstants.quizTimerSeconds;
   Timer? _timer;
   QuizResult? _lastResult;
   List<QuizResult> _history = [];
@@ -49,7 +59,7 @@ class QuizProvider extends ChangeNotifier {
       _answeredQuestions.where((q) => q.isCorrect).length;
 
   Future<void> loadHistory() async {
-    _history = await StorageService.getQuizHistory();
+    _history = await _storageService.getQuizHistory();
     notifyListeners();
   }
 
@@ -59,7 +69,7 @@ class QuizProvider extends ChangeNotifier {
     notifyListeners();
 
     try {
-      final questions = QuestionService.getRandomQuestions(category.id);
+      final questions = _questionService.getRandomQuestions(category.id);
       if (questions.isEmpty) {
         _errorMessage =
             'No questions available for this category. Please update the question bank.';
@@ -100,7 +110,7 @@ class QuizProvider extends ChangeNotifier {
 
     final question = currentQuestion!;
     final isCorrect = _selectedAnswer == question.correctAnswer;
-    final timeTaken = 30 - _timeRemaining;
+    final timeTaken = AppConstants.quizTimerSeconds - _timeRemaining;
 
     _answeredQuestions.add(AnsweredQuestion(
       question: question,
@@ -122,7 +132,7 @@ class QuizProvider extends ChangeNotifier {
       question: question,
       selectedAnswer: -1,
       isCorrect: false,
-      timeTaken: 30,
+      timeTaken: AppConstants.quizTimerSeconds,
     ));
 
     notifyListeners();
@@ -154,7 +164,7 @@ class QuizProvider extends ChangeNotifier {
 
   void _startTimer() {
     _timer?.cancel();
-    _timeRemaining = 30;
+    _timeRemaining = AppConstants.quizTimerSeconds;
     _timer = Timer.periodic(const Duration(seconds: 1), (timer) {
       if (_timeRemaining > 0) {
         _timeRemaining--;
@@ -182,7 +192,7 @@ class QuizProvider extends ChangeNotifier {
     );
 
     _lastResult = result;
-    await StorageService.saveQuizResult(result);
+    await _storageService.saveQuizResult(result);
     await loadHistory();
     notifyListeners();
   }
@@ -195,13 +205,13 @@ class QuizProvider extends ChangeNotifier {
     _selectedAnswer = -1;
     _answerSubmitted = false;
     _answeredQuestions = [];
-    _timeRemaining = 30;
+    _timeRemaining = AppConstants.quizTimerSeconds;
     _lastResult = null;
     notifyListeners();
   }
 
   Future<void> clearHistory() async {
-    await StorageService.clearHistory();
+    await _storageService.clearHistory();
     _history = [];
     notifyListeners();
   }

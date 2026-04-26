@@ -1,27 +1,27 @@
 import 'dart:convert';
 import 'package:shared_preferences/shared_preferences.dart';
 import '../models/quiz_result_model.dart';
+import '../constants/app_constants.dart';
 
 class StorageService {
-  static const String _historyKey = 'quiz_history';
-  static const int _maxHistoryCount = 10;
+  final String _historyKey = 'quiz_history';
 
-  static Future<void> saveQuizResult(QuizResult result) async {
+  Future<void> saveQuizResult(QuizResult result) async {
     final prefs = await SharedPreferences.getInstance();
     final history = await getQuizHistory();
 
     history.insert(0, result);
 
-    // Keep only last 10 results
-    if (history.length > _maxHistoryCount) {
-      history.removeRange(_maxHistoryCount, history.length);
+    // Keep only last N results
+    if (history.length > AppConstants.maxHistoryCount) {
+      history.removeRange(AppConstants.maxHistoryCount, history.length);
     }
 
     final jsonList = history.map((r) => json.encode(r.toJson())).toList();
     await prefs.setStringList(_historyKey, jsonList);
   }
 
-  static Future<List<QuizResult>> getQuizHistory() async {
+  Future<List<QuizResult>> getQuizHistory() async {
     final prefs = await SharedPreferences.getInstance();
     final jsonList = prefs.getStringList(_historyKey) ?? [];
 
@@ -37,12 +37,12 @@ class StorageService {
     return results;
   }
 
-  static Future<void> clearHistory() async {
+  Future<void> clearHistory() async {
     final prefs = await SharedPreferences.getInstance();
     await prefs.remove(_historyKey);
   }
 
-  static Future<Map<String, dynamic>> getStats() async {
+  Future<Map<String, dynamic>> getStats() async {
     final history = await getQuizHistory();
     if (history.isEmpty) {
       return {
