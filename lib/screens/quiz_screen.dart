@@ -60,12 +60,8 @@ class QuizScreen extends StatelessWidget {
                   ),
                 ],
               ),
-              actions: [
-                Padding(
-                  padding: const EdgeInsets.only(right: 16),
-                  child: _buildTimerWidget(provider),
-                ),
-              ],
+              actions: const [],
+
             ),
             body: SafeArea(
               child: Column(
@@ -127,40 +123,7 @@ class QuizScreen extends StatelessWidget {
     );
   }
 
-  Widget _buildTimerWidget(QuizProvider provider) {
-    Color timerColor;
-    if (provider.timeRemaining > 15) {
-      timerColor = AppTheme.timerGreen;
-    } else if (provider.timeRemaining > 8) {
-      timerColor = AppTheme.timerOrange;
-    } else {
-      timerColor = AppTheme.timerRed;
-    }
 
-    return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
-      decoration: BoxDecoration(
-        color: timerColor.withValues(alpha: 0.1),
-        borderRadius: BorderRadius.circular(20),
-        border: Border.all(color: timerColor.withValues(alpha: 0.4)),
-      ),
-      child: Row(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          Icon(Icons.timer_outlined, size: 14, color: timerColor),
-          const SizedBox(width: 4),
-          Text(
-            '${provider.timeRemaining}s',
-            style: TextStyle(
-              color: timerColor,
-              fontSize: 13,
-              fontWeight: FontWeight.w700,
-            ),
-          ),
-        ],
-      ),
-    );
-  }
 
   Widget _buildScoreStrip(QuizProvider provider) {
     return Container(
@@ -386,17 +349,16 @@ class QuizScreen extends StatelessWidget {
   Widget _buildExplanationCard(QuizProvider provider, question) {
     final isCorrect =
         provider.selectedAnswer == question.correctAnswer;
-    final timedOut = provider.selectedAnswer == -1;
 
     return Container(
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
-        color: isCorrect && !timedOut
+        color: isCorrect
             ? AppTheme.successGreen.withValues(alpha: 0.06)
             : AppTheme.warningAmber.withValues(alpha: 0.06),
         borderRadius: BorderRadius.circular(10),
         border: Border.all(
-          color: isCorrect && !timedOut
+          color: isCorrect
               ? AppTheme.successGreen.withValues(alpha: 0.3)
               : AppTheme.warningAmber.withValues(alpha: 0.4),
         ),
@@ -407,27 +369,21 @@ class QuizScreen extends StatelessWidget {
           Row(
             children: [
               Icon(
-                timedOut
-                    ? Icons.timer_off_outlined
-                    : isCorrect
-                        ? Icons.lightbulb_outline
-                        : Icons.info_outline,
+                isCorrect ? Icons.lightbulb_outline : Icons.info_outline,
                 size: 16,
-                color: isCorrect && !timedOut
+                color: isCorrect
                     ? AppTheme.successGreen
                     : AppTheme.warningAmber,
               ),
               const SizedBox(width: 6),
               Text(
-                timedOut
-                    ? 'Time\'s Up!'
-                    : isCorrect
-                        ? 'Correct!'
-                        : 'Explanation',
+                isCorrect
+                    ? 'Correct!'
+                    : 'Explanation',
                 style: TextStyle(
                   fontSize: 13,
                   fontWeight: FontWeight.w700,
-                  color: isCorrect && !timedOut
+                  color: isCorrect
                       ? AppTheme.successGreen
                       : AppTheme.warningAmber,
                 ),

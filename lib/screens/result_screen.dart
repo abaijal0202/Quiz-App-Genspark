@@ -134,9 +134,7 @@ class ResultScreen extends StatelessWidget {
   }
 
   Widget _buildBreakdownCard(result) {
-    final avgTime = result.totalQuestions > 0
-        ? (result.totalTimeTaken / result.totalQuestions).round()
-        : 0;
+
 
     return Container(
       padding: const EdgeInsets.all(20),
@@ -171,18 +169,6 @@ class ResultScreen extends StatelessWidget {
                 label: 'Wrong',
                 color: AppTheme.errorRed,
               ),
-              _buildStat(
-                icon: Icons.timer_outlined,
-                value: '${avgTime}s',
-                label: 'Avg/Q',
-                color: AppTheme.primaryBlue,
-              ),
-              _buildStat(
-                icon: Icons.access_time_outlined,
-                value: _formatTime(result.totalTimeTaken),
-                label: 'Total',
-                color: AppTheme.textMedium,
-              ),
             ],
           ),
         ],
@@ -190,12 +176,7 @@ class ResultScreen extends StatelessWidget {
     );
   }
 
-  String _formatTime(int seconds) {
-    if (seconds >= 60) {
-      return '${(seconds / 60).floor()}m${seconds % 60}s';
-    }
-    return '${seconds}s';
-  }
+
 
   Widget _buildStat(
       {required IconData icon,

@@ -19,7 +19,7 @@ class Question {
 
   factory Question.fromJson(Map<String, dynamic> json) {
     return Question(
-      id: json['id'] as String,
+      id: json['id'].toString(),
       category: json['category'] as String,
       difficulty: json['difficulty'].toString(),
       question: json['question'] as String,

@@ -173,7 +173,6 @@ class _ReviewScreenState extends State<ReviewScreen> {
   Widget _buildQuestionReviewCard(AnsweredQuestion aq, int index) {
     final isCorrect = aq.isCorrect;
     final isExpanded = _expandedIndex == index;
-    final timedOut = aq.selectedAnswer == -1;
     final letters = ['A', 'B', 'C', 'D'];
 
     return Container(
@@ -253,7 +252,7 @@ class _ReviewScreenState extends State<ReviewScreen> {
                 const SizedBox(height: 10),
                 Row(
                   children: [
-                    if (!timedOut) ...[
+                    if (aq.selectedAnswer != -1)
                       _buildAnswerPill(
                         label: 'Your answer',
                         value:
@@ -262,15 +261,14 @@ class _ReviewScreenState extends State<ReviewScreen> {
                             ? AppTheme.successGreen
                             : AppTheme.errorRed,
                         isCorrect: isCorrect,
-                      ),
-                    ] else ...[
+                      )
+                    else
                       _buildAnswerPill(
-                        label: 'Timed out',
-                        value: 'No answer',
+                        label: 'No Answer',
+                        value: 'Timed out',
                         color: AppTheme.warningAmber,
                         isCorrect: false,
                       ),
-                    ],
                     if (!isCorrect) ...[
                       const SizedBox(width: 8),
                       _buildAnswerPill(
@@ -409,11 +407,6 @@ class _ReviewScreenState extends State<ReviewScreen> {
                     _buildTagChip(
                       aq.question.difficulty,
                       AppTheme.difficultyColor(aq.question.difficulty),
-                    ),
-                    const SizedBox(width: 6),
-                    _buildTagChip(
-                      'Time: ${aq.timeTaken}s',
-                      AppTheme.primaryBlue,
                     ),
                   ],
                 ),

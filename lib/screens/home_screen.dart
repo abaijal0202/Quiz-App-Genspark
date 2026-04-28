@@ -62,6 +62,8 @@ class _HomeScreenState extends State<HomeScreen> {
 
   @override
   Widget build(BuildContext context) {
+    // Watch QuizProvider to rebuild when sync completes or isLoading changes
+    context.watch<QuizProvider>();
     final categories = context.read<QuestionService>().categories;
 
     return Scaffold(
@@ -138,6 +140,48 @@ class _HomeScreenState extends State<HomeScreen> {
             ],
           ),
           const Spacer(),
+          Consumer<QuizProvider>(
+            builder: (context, provider, _) {
+              return IconButton(
+                onPressed: provider.isLoading
+                    ? null
+                    : () async {
+                        try {
+                          await provider.syncQuestions();
+                          if (context.mounted) {
+                            ScaffoldMessenger.of(context).showSnackBar(
+                              const SnackBar(
+                                content: Text(
+                                    'Successfully synced with online question bank'),
+                                backgroundColor: AppTheme.successGreen,
+                              ),
+                            );
+                          }
+                        } catch (e) {
+                          if (context.mounted) {
+                            ScaffoldMessenger.of(context).showSnackBar(
+                              SnackBar(
+                                content: Text('Sync failed: $e'),
+                                backgroundColor: AppTheme.errorRed,
+                              ),
+                            );
+                          }
+                        }
+                      },
+                icon: provider.isLoading
+                    ? const SizedBox(
+                        width: 20,
+                        height: 20,
+                        child: CircularProgressIndicator(
+                          strokeWidth: 2,
+                          color: AppTheme.primaryBlue,
+                        ))
+                    : const Icon(Icons.sync),
+                color: AppTheme.textMedium,
+                tooltip: 'Sync Questions',
+              );
+            },
+          ),
           IconButton(
             onPressed: () {
               Navigator.push(

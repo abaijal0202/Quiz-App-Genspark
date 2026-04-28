@@ -1,5 +1,5 @@
 {
-  "version": "1.0",
+  "version": "1.1",
   "last_updated": "2024-01-01",
   "categories": [
     {
@@ -8,6 +8,13 @@
       "description": "Arithmetic, algebra, geometry and problem solving",
       "icon": "calculate",
       "color": "#1565C0"
+    },
+    {
+      "id": "science",
+      "name": "Science",
+      "description": "Class 5 science",
+      "icon": "science",
+      "color": "#00695C"
     }
   ],
   "questions": [
@@ -1410,6 +1417,356 @@
       ],
       "correct_answer": 2,
       "explanation": "A scalene triangle must be rotated a full 360\u00b0 to look the same."
+    },
+    {
+      "id": "1",
+      "category": "science",
+      "difficulty": 7,
+      "question": "Which blood vessel carries blood from the heart to different parts of the body?",
+      "options": [
+        "Vein",
+        "Artery",
+        "Capillary",
+        "Nerve"
+      ],
+      "correct_answer": 1,
+      "explanation": "Arteries carry blood away from the heart to different parts of the body. Veins bring blood back to the heart, while capillaries are tiny vessels connecting arteries and veins."
+    },
+    {
+      "id": "2",
+      "category": "science",
+      "difficulty": 7,
+      "question": "What is the main function of the heart in the circulatory system?",
+      "options": [
+        "To digest food",
+        "To pump blood",
+        "To make bones",
+        "To clean the skin"
+      ],
+      "correct_answer": 1,
+      "explanation": "The heart is a strong muscular organ whose main job is to pump blood throughout the body. This helps transport oxygen and nutrients to all body parts."
+    },
+    {
+      "id": "3",
+      "category": "science",
+      "difficulty": 8,
+      "question": "Why is blood important for our body?",
+      "options": [
+        "It only gives colour to the body",
+        "It carries oxygen, nutrients and wastes",
+        "It helps us hear sounds",
+        "It makes hair grow faster"
+      ],
+      "correct_answer": 1,
+      "explanation": "Blood is important because it carries oxygen and nutrients to body cells and also takes away waste materials such as carbon dioxide."
+    },
+    {
+      "id": "4",
+      "category": "science",
+      "difficulty": 8,
+      "question": "Which part of the circulatory system is like a network of tubes in the body?",
+      "options": [
+        "Blood vessels",
+        "Lungs",
+        "Bones",
+        "Muscles"
+      ],
+      "correct_answer": 0,
+      "explanation": "Blood vessels form a network of tubes through which blood flows in the body. These include arteries, veins and capillaries."
+    },
+    {
+      "id": "5",
+      "category": "science",
+      "difficulty": 9,
+      "question": "If the heart stops pumping properly, what will happen first?",
+      "options": [
+        "Food will turn into bones",
+        "Blood will not reach body parts properly",
+        "Teeth will become longer",
+        "Hair will stop growing immediately"
+      ],
+      "correct_answer": 1,
+      "explanation": "The heart pumps blood through the body. If it does not pump properly, blood carrying oxygen and nutrients will not reach body parts as needed."
+    },
+    {
+      "id": "6",
+      "category": "science",
+      "difficulty": 9,
+      "question": "Which statement correctly explains how the circulatory system helps in growth?",
+      "options": [
+        "It sharpens nails only",
+        "It sends oxygen and nutrients to cells",
+        "It changes blood into muscles",
+        "It stores food in bones"
+      ],
+      "correct_answer": 1,
+      "explanation": "The circulatory system helps the body grow and develop by carrying oxygen and nutrients to all cells. Cells need these materials to work and grow properly."
+    },
+    {
+      "id": "7",
+      "category": "science",
+      "difficulty": 8,
+      "question": "Which three parts together make up the circulatory system?",
+      "options": [
+        "Heart, bones and muscles",
+        "Heart, blood and blood vessels",
+        "Lungs, skin and nerves",
+        "Brain, bones and veins"
+      ],
+      "correct_answer": 1,
+      "explanation": "The circulatory system has three main parts: the heart, blood and blood vessels. These work together to transport materials throughout the body."
+    },
+    {
+      "id": "8",
+      "category": "science",
+      "difficulty": 10,
+      "question": "What is the best reason that the circulatory system is called a transport system?",
+      "options": [
+        "It helps us walk from place to place",
+        "It transports oxygen, nutrients and wastes in the body",
+        "It carries bones to muscles",
+        "It moves only water through the stomach"
+      ],
+      "correct_answer": 1,
+      "explanation": "The circulatory system is called a transport system because it carries useful substances like oxygen and nutrients and also removes waste materials through the blood."
+    },
+    {
+      "id": "9",
+      "category": "science",
+      "difficulty": 7,
+      "question": "What is the framework of bones in our body called?",
+      "options": [
+        "Skeleton",
+        "Skull",
+        "Muscle",
+        "Ligament"
+      ],
+      "correct_answer": 0,
+      "explanation": "The framework of bones in the body is called the skeleton. It gives shape and support to the body."
+    },
+    {
+      "id": "10",
+      "category": "science",
+      "difficulty": 8,
+      "question": "Which structure protects the brain?",
+      "options": [
+        "Rib cage",
+        "Vertebral column",
+        "Skull",
+        "Knee joint"
+      ],
+      "correct_answer": 2,
+      "explanation": "The skull is the bony structure that protects the brain. Different parts of the skeleton protect important organs in the body."
+    },
+    {
+      "id": "11",
+      "category": "science",
+      "difficulty": 8,
+      "question": "Which part of the skeleton protects the spinal cord?",
+      "options": [
+        "Ribs",
+        "Vertebral column",
+        "Skull",
+        "Arm bone"
+      ],
+      "correct_answer": 1,
+      "explanation": "The vertebral column protects the spinal cord. This is a key protective function of the spine in the skeletal system."
+    },
+    {
+      "id": "12",
+      "category": "science",
+      "difficulty": 9,
+      "question": "What is the main use of ligaments in our body?",
+      "options": [
+        "They join muscles to bones",
+        "They hold bones together",
+        "They carry blood",
+        "They digest food"
+      ],
+      "correct_answer": 1,
+      "explanation": "Ligaments are strong tissues that hold bones together at joints. This helps keep joints stable during movement."
+    },
+    {
+      "id": "13",
+      "category": "science",
+      "difficulty": 9,
+      "question": "Why is the skeleton important even though it is inside the body?",
+      "options": [
+        "It gives shape, support and protection",
+        "It produces sweat",
+        "It pumps blood",
+        "It stores only water"
+      ],
+      "correct_answer": 0,
+      "explanation": "The skeleton is important because it supports the body, gives it shape and protects delicate internal organs like the brain and spinal cord."
+    },
+    {
+      "id": "14",
+      "category": "science",
+      "difficulty": 10,
+      "question": "A child falls and injures the chest badly. Which part of the skeleton mainly protects the organs there?",
+      "options": [
+        "Skull",
+        "Rib cage",
+        "Leg bones",
+        "Jaw bone"
+      ],
+      "correct_answer": 1,
+      "explanation": "The rib cage protects important organs in the chest, especially the heart and lungs. The skeleton protects delicate organs in different body regions."
+    },
+    {
+      "id": "15",
+      "category": "science",
+      "difficulty": 8,
+      "question": "Which of these is the best example of the skeleton helping in movement?",
+      "options": [
+        "Bones work with muscles to move body parts",
+        "Bones digest food in the stomach",
+        "Bones carry oxygen in the blood",
+        "Bones clean the teeth"
+      ],
+      "correct_answer": 0,
+      "explanation": "The skeleton helps in movement because bones work together with muscles to move different parts of the body."
+    },
+    {
+      "id": "16",
+      "category": "science",
+      "difficulty": 7,
+      "question": "Which nutrient is mainly called a body-building nutrient?",
+      "options": [
+        "Fat",
+        "Protein",
+        "Vitamin",
+        "Water"
+      ],
+      "correct_answer": 1,
+      "explanation": "Proteins are called body-building nutrients because they help the body grow and repair cells and tissues."
+    },
+    {
+      "id": "17",
+      "category": "science",
+      "difficulty": 7,
+      "question": "Which two nutrients are mainly energy-giving nutrients?",
+      "options": [
+        "Vitamins and minerals",
+        "Proteins and water",
+        "Carbohydrates and fats",
+        "Roughage and water"
+      ],
+      "correct_answer": 2,
+      "explanation": "Carbohydrates and fats are energy-giving nutrients. They provide the body with the energy needed for daily activities."
+    },
+    {
+      "id": "18",
+      "category": "science",
+      "difficulty": 8,
+      "question": "What is a balanced diet?",
+      "options": [
+        "A diet containing only fruits",
+        "A diet that gives the body the nutrition it needs",
+        "A meal with sweets and fried food only",
+        "A diet without water"
+      ],
+      "correct_answer": 1,
+      "explanation": "A balanced diet is one that gives the body the nutrition it needs to function properly. It includes different important food components."
+    },
+    {
+      "id": "19",
+      "category": "science",
+      "difficulty": 8,
+      "question": "Why should we eat fruits and vegetables regularly?",
+      "options": [
+        "They make us sleepy",
+        "They keep us fit and healthy",
+        "They replace bones",
+        "They stop blood flow"
+      ],
+      "correct_answer": 1,
+      "explanation": "Fruits and vegetables help keep us fit and healthy. They are important parts of a healthy diet."
+    },
+    {
+      "id": "20",
+      "category": "science",
+      "difficulty": 9,
+      "question": "Which food component helps in the removal of undigested food from the body?",
+      "options": [
+        "Protein",
+        "Fat",
+        "Roughage",
+        "Sugar"
+      ],
+      "correct_answer": 2,
+      "explanation": "Roughage helps in the removal of undigested food from the body. It supports proper digestion and bowel movement."
+    },
+    {
+      "id": "21",
+      "category": "science",
+      "difficulty": 9,
+      "question": "Besides eating a balanced diet, what else is necessary to remain healthy?",
+      "options": [
+        "Cleanliness",
+        "Sleeping all day",
+        "Eating more sweets",
+        "Skipping meals"
+      ],
+      "correct_answer": 0,
+      "explanation": "Besides a balanced diet, cleanliness is necessary to maintain good health. Healthy habits and hygiene are important for the body."
+    },
+    {
+      "id": "22",
+      "category": "science",
+      "difficulty": 10,
+      "question": "A child eats plenty of rice and butter but very little protein. Which problem is most likely to happen?",
+      "options": [
+        "The child may get energy but poor body growth and repair",
+        "The child will have stronger bones immediately",
+        "The child will stop needing water",
+        "The child will not need fruits and vegetables"
+      ],
+      "correct_answer": 0,
+      "explanation": "Rice and butter mainly provide energy through carbohydrates and fats, but proteins are needed for body building and repair. Without enough protein, growth and repair may suffer."
+    },
+    {
+      "id": "23",
+      "category": "science",
+      "difficulty": 10,
+      "question": "Which meal is the best example of a more balanced choice for a growing child?",
+      "options": [
+        "Only chips and soft drink",
+        "Rice, pulses, vegetables and fruit",
+        "Only sweets and ice cream",
+        "Butter and jam only"
+      ],
+      "correct_answer": 1,
+      "explanation": "A balanced diet should provide the nutrition the body needs and include different food groups. Rice, pulses, vegetables and fruit offer a more balanced mix than junk food or single-item meals."
+    },
+    {
+      "id": "24",
+      "category": "science",
+      "difficulty": 9,
+      "question": "How are the circulatory system and food connected in our body?",
+      "options": [
+        "The circulatory system carries nutrients from food to body cells",
+        "Food turns directly into bones without blood",
+        "The heart digests all the food",
+        "Blood vessels chew the food"
+      ],
+      "correct_answer": 0,
+      "explanation": "The circulatory system transports nutrients obtained from food to all parts of the body through the blood. This is one of its main functions."
+    },
+    {
+      "id": "25",
+      "category": "science",
+      "difficulty": 10,
+      "question": "Why do growing children need both proteins and vitamins in their diet?",
+      "options": [
+        "Proteins give shape to books and vitamins pump blood",
+        "Proteins help growth and repair, while vitamins help protect health",
+        "Proteins only add taste and vitamins only add colour",
+        "Both are needed only for hair cutting"
+      ],
+      "correct_answer": 1,
+      "explanation": "Proteins are body-building nutrients that help in growth and repair, while vitamins help the body stay healthy and fight diseases. Both are important for growing children."
     }
   ]
 }

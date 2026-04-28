@@ -26,7 +26,6 @@ class QuizProvider extends ChangeNotifier {
   bool _answerSubmitted = false;
   List<AnsweredQuestion> _answeredQuestions = [];
   CategoryModel? _selectedCategory;
-  int _timeRemaining = AppConstants.quizTimerSeconds;
   Timer? _timer;
   QuizResult? _lastResult;
   List<QuizResult> _history = [];
@@ -45,7 +44,6 @@ class QuizProvider extends ChangeNotifier {
   bool get answerSubmitted => _answerSubmitted;
   List<AnsweredQuestion> get answeredQuestions => _answeredQuestions;
   CategoryModel? get selectedCategory => _selectedCategory;
-  int get timeRemaining => _timeRemaining;
   int get totalQuestions => _questions.length;
   QuizResult? get lastResult => _lastResult;
   List<QuizResult> get history => _history;
@@ -88,7 +86,6 @@ class QuizProvider extends ChangeNotifier {
       _state = QuizState.inProgress;
       _isLoading = false;
 
-      _startTimer();
       notifyListeners();
     } catch (e) {
       _errorMessage = 'Failed to load questions: $e';
@@ -110,7 +107,7 @@ class QuizProvider extends ChangeNotifier {
 
     final question = currentQuestion!;
     final isCorrect = _selectedAnswer == question.correctAnswer;
-    final timeTaken = AppConstants.quizTimerSeconds - _timeRemaining;
+    const timeTaken = 0;
 
     _answeredQuestions.add(AnsweredQuestion(
       question: question,
@@ -122,28 +119,7 @@ class QuizProvider extends ChangeNotifier {
     notifyListeners();
   }
 
-  void _timeOut() {
-    if (_answerSubmitted) return;
-    _answerSubmitted = true;
-    _timer?.cancel();
 
-    final question = currentQuestion!;
-    _answeredQuestions.add(AnsweredQuestion(
-      question: question,
-      selectedAnswer: -1,
-      isCorrect: false,
-      timeTaken: AppConstants.quizTimerSeconds,
-    ));
-
-    notifyListeners();
-
-    // Auto-advance after timeout
-    Future.delayed(const Duration(milliseconds: 800), () {
-      if (_state == QuizState.inProgress) {
-        nextQuestion();
-      }
-    });
-  }
 
   void nextQuestion() {
     if (!_answerSubmitted) {
@@ -155,25 +131,13 @@ class QuizProvider extends ChangeNotifier {
       _currentIndex++;
       _selectedAnswer = -1;
       _answerSubmitted = false;
-      _startTimer();
       notifyListeners();
     } else {
       _completeQuiz();
     }
   }
 
-  void _startTimer() {
-    _timer?.cancel();
-    _timeRemaining = AppConstants.quizTimerSeconds;
-    _timer = Timer.periodic(const Duration(seconds: 1), (timer) {
-      if (_timeRemaining > 0) {
-        _timeRemaining--;
-        notifyListeners();
-      } else {
-        _timeOut();
-      }
-    });
-  }
+
 
   Future<void> _completeQuiz() async {
     _timer?.cancel();
@@ -205,7 +169,6 @@ class QuizProvider extends ChangeNotifier {
     _selectedAnswer = -1;
     _answerSubmitted = false;
     _answeredQuestions = [];
-    _timeRemaining = AppConstants.quizTimerSeconds;
     _lastResult = null;
     notifyListeners();
   }
@@ -214,6 +177,23 @@ class QuizProvider extends ChangeNotifier {
     await _storageService.clearHistory();
     _history = [];
     notifyListeners();
+  }
+
+  Future<void> syncQuestions() async {
+    _isLoading = true;
+    _errorMessage = null;
+    notifyListeners();
+
+    try {
+      await _questionService.syncQuestions();
+      _isLoading = false;
+      notifyListeners();
+    } catch (e) {
+      _errorMessage = 'Sync failed: $e';
+      _isLoading = false;
+      notifyListeners();
+      rethrow;
+    }
   }
 
   @override

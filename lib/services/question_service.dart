@@ -13,24 +13,36 @@ class QuestionService {
   Future<void> loadQuestions() async {
     if (_loaded) return;
     const url = 'https://storage.googleapis.com/dell-laptop-backup-2026/Quiz_app/question_bank.json';
+    
     try {
+      print('Attempting to fetch questions from: $url');
       final response = await http.get(Uri.parse(url)).timeout(const Duration(seconds: 10));
+      
       if (response.statusCode != 200) {
-        throw Exception('Failed to load questions from server');
+        throw Exception('Server returned status code: ${response.statusCode}');
       }
-      final jsonString = response.body;
+      
+      // Use utf8.decode on bodyBytes to safely handle special characters like °, ₹, etc.
+      final jsonString = utf8.decode(response.bodyBytes);
       final data = json.decode(jsonString) as Map<String, dynamic>;
+      
       _parseData(data);
       _loaded = true;
       _loadError = null;
+      print('Successfully loaded questions from online source.');
     } catch (e) {
-      _loadError = 'Failed to fetch latest questions from $url. Using cached version.';
+      print('Error fetching online questions: $e');
+      _loadError = 'Failed to fetch latest questions. Using offline version.';
+      
       try {
+        print('Attempting to load questions from local assets...');
         final jsonString = await rootBundle.loadString('assets/questions/question_bank.json');
         final data = json.decode(jsonString) as Map<String, dynamic>;
         _parseData(data);
         _loaded = true;
+        print('Successfully loaded questions from local assets.');
       } catch (e2) {
+        print('Critical error: Failed to load local questions: $e2');
         _loaded = false;
         _loadError = 'Failed to load questions completely.';
         rethrow;
@@ -86,5 +98,10 @@ class QuestionService {
     _loaded = false;
     _allQuestions = [];
     _categories = [];
+  }
+
+  Future<void> syncQuestions() async {
+    _loaded = false; // Force reload
+    await loadQuestions();
   }
 }
